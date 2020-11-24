@@ -92,7 +92,7 @@ text-decoration: none;
 }
 
 .logo.here a img{
-margin-top: 0;
+margin-top: 18px;
 }
 .header__main {
 display: flex;
@@ -236,12 +236,20 @@ margin: 0;
 
 .btn_custom {
 background: transparent;
-border: 2px solid #fff;
+border: 5px solid #fff;
 padding: 10px 50px;
 justify-content: center;
 display: flex;
 align-items: center;
 transition: .5s;
+}
+
+input::placeholder{
+	color: #000;
+}
+
+textarea::placeholder{
+	color: #000;
 }
 
 .btn_custom a{
@@ -261,7 +269,7 @@ color: #000;
 
 .btn_custom2 {
 background: transparent;
-border: 2px solid #155394;
+border: 3px solid #155394;
 padding: 10px 50px;
 justify-content: center;
 display: flex;
@@ -346,7 +354,6 @@ height: 105vh;
 .main-banner .main-banner__img img {
 width: 100%;
 height: 100%;
-object-fit: cover;
 object-position: top;
 }
 
@@ -400,8 +407,10 @@ transition: 0.3s ease-in-out;
 
 
 .form-search_title{
-color: #fff;
-font-size: 17px;
+	 top: 5px;
+    color: #fff;
+    font-size: 17px;
+    position: relative;
 }
 .nav-item {
 position: relative;
@@ -483,7 +492,7 @@ z-index: 99; }
 .responsive-menu-btn svg {
 position: absolute;
 left: 0;
-top: 37%;
+top: 44%;
 } 
 .responsive-menu-btn svg.open {
 visibility: visible;
@@ -1136,7 +1145,6 @@ margin-bottom: 2%;
 padding-top: 100px;
 padding-bottom: 150px;
 position: relative;
-height: 105vh;
 }
 .colors{
 display: flex;
@@ -1177,7 +1185,7 @@ color: #fff;
 
 #section07 a span{
 position: absolute;
-bottom: 10%;
+bottom: 7%;
 left: 50%;
 width: 24px;
 height: 24px;
@@ -1260,10 +1268,11 @@ color: #fff!important;
 text-align: center!important;
 background-color: transparent;
 color: black;
-padding: 10px 20px!important;
+padding: 0px 20px!important;
 border: none;
 cursor: pointer;
 width: 166px;
+font-size:15px;
 }
 
 /* Change background color of buttons on hover */
@@ -1301,34 +1310,39 @@ border-right: 1px solid #000!important;
 
 }
 
+
 .link-page {
-position: absolute;
-top: 0;
-left: 88%;
-right: -3%;
-bottom: 0;
-justify-content: center;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 88%;
+    right: 3%;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
 }
 
 .link-page2 {
 position: absolute;
 top: 0;
-right: 55%;
-left: 4%;
+right: 88%;
+left: 3%;
 bottom: 0;
 justify-content: center;
 display: flex;
-flex-direction: column;
-align-items: flex-start;
+align-items: center;
 }
 
-.link-page_item img{
+.link-page img{
 width: 15%;
 }
 
+
+
+.link-page2 img {
+    width: 15%;
+}
 
 
 
@@ -1343,6 +1357,7 @@ transition: .5s;
 margin-bottom: 0;
 color: #fff;
 font-size: 20px;
+    margin-left: 5%;
 }
 
 a.link-page_item:hover{
@@ -1761,6 +1776,7 @@ letter-spacing: 1.05px;
 text-align: center;
 color: #fff;
 margin-bottom: 5%;
+text-transform: uppercase;
 }
 
 .btn_faqs {
@@ -1877,19 +1893,36 @@ margin-bottom: 3%;
 
 .impacto_child_img{
 width: 50%;
-justify-content: center;
-display: flex;
+    justify-content: center;
+    display: flex;
+    height: 70vh;
+    object-fit: contain;
+
+}
+
+.impacto_child_img2{
+width: 50%;
+    justify-content: center;
+    display: flex;
+    height: auto;
+    object-fit: contain;
 
 }
 .impacto_child {
 display: flex;
 margin-bottom: 10%;
 justify-content: space-around;
+align-items: center;
 }
 
 .impacto_child_img img{
+width: 100%;
+object-fit:fill;
+}
+
+.impacto_child_img2 img{
 width: 90%;
-object-fit: cover;
+object-fit:contain;
 }
 
 .impacto_informacion{
@@ -1927,7 +1960,7 @@ right: 0;
 content: '';
 height: 1px;
 background: #0f4388;
-width: 22%;
+width: 24%;
 }
 
 .great{
@@ -1952,14 +1985,14 @@ text-align: center;
 }
 
 .manuales h3:after{
-position: absolute;
-bottom: -15px;
-left: 47%;
-right: 0;
-content: '';
-height: 1px;
-background: #0f4388;
-width: 5%;
+    position: absolute;
+    bottom: -15px;
+    left: 48%;
+    right: 0;
+    content: '';
+    height: 1px;
+    background: #0f4388;
+    width: 5%;
 }
 
 .categ h5{
@@ -2066,8 +2099,9 @@ width: 280px;
 height: 300px;
 object-fit: cover;
 }
+
 .icon-valores.icon-act {
-width: 24%;
+    width: 22%;
 }
 
 .title-actv-2 h6{
@@ -2171,7 +2205,21 @@ position: absolute;
 
     .comunidad h3{
     	padding: 20px;
+    	position: relative;
     }
+
+        .comunidad h3::after{
+    position: absolute;
+    top: auto;
+    bottom: 20%;
+    left: 20px;
+    right: 0;
+    height: 2px;
+    content: '';
+    width: 85px;
+    background: #0f4388;
+    }
+
 
   
 
@@ -2181,7 +2229,7 @@ position: absolute;
     text-align: center!important;
     background-color: transparent;
     color: black;
-    padding: 10px 20px!important;
+    padding: 0px 20px!important;
     cursor: pointer;
     width: 166px;
     }
@@ -2209,6 +2257,11 @@ position: absolute;
     width: 100%;
     height: 400px;
     object-fit: cover;
+
+    border-top-left-radius: 1%;
+        border-top-right-radius: 1%;
+
+
     }
 
     .card-post_text{
@@ -2227,17 +2280,21 @@ position: absolute;
 
     .card-post_item {
     box-shadow: 0 1px 20px 3px rgba(0,0,0,0.2);
+    border-radius: 1%;
 }
 
     .card-post_item_two {
     box-shadow: 0 1px 20px 3px rgba(0,0,0,0.2);
         width: 45%;
         margin-bottom: 5%;
+            border-radius: 1%;
 }
 
   .card-post_item_two  img{
 
     width: 100%;
+        border-top-left-radius: 1%;
+        border-top-right-radius: 1%;
   }
 
 
@@ -2278,7 +2335,7 @@ i.fa.fa-calendar {
 
 .card-post-right .card-post_item_two {
 
-    width: 60%;}
+    width: 75%;}
 
     .news{
     	background: gray;
@@ -2310,3 +2367,204 @@ i.fa.fa-calendar {
     .text_news p{
     	color: #fff;
     }
+
+    section.page-exito {
+padding-top: 200px;
+    padding-bottom: 150px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.page-exito h4{
+	    font-size: 30px;
+	    font-weight: bold;
+	    margin-bottom: 2%;
+}
+
+.validate-check{
+color: #fff!important;
+    background: #6dd400;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.validate-fallo{
+color: #fff!important;
+    background: #e02020;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+.border-pago {
+    padding: 20px;
+    border: 1px solid #ddd;
+        width: 50%;
+}
+
+.border-pago p{
+	margin-bottom: 0;
+}
+
+.border-pago2 p{
+	margin-bottom: 0;
+}
+.border-pago2{
+	  padding: 20px;
+    border: 1px solid #ddd;
+	width: 60%;
+}
+
+section.thanks {
+		padding-top: 150px;
+		padding-bottom: 100px;
+	}
+
+	.thanks h3{
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 0.83;
+		text-align: left;
+		color: #000;
+
+	}
+
+	.info-pedido{
+		margin-top: 3%;
+	}
+
+	.info-pedido p{
+		font-size: 20px;
+		font-weight: bold;
+		color: #a0d1af;
+	}
+
+	.confirm {
+		padding: 20px;
+		border: 1px solid #ddd;
+		margin-top: 2%;
+		width: 57%;
+	}
+
+	.confirm h6{
+		font-size: 25px;
+		font-weight: 600;
+	}
+
+	.confirm p{
+		font-size: 16px;
+		margin-top: 1%;
+	}
+	.info-complete p{
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.info-complete{
+		padding: 20px;
+		border: 1px solid #ddd;
+		width: 57%;
+		margin-top: 3%;
+	}
+
+	.text-pedido p{
+		font-weight: 500;
+		font-size: 18px;
+	}
+
+	.text-pedido h6{
+		font-size: 18px;
+		font-weight: bold;
+		color: #000;
+		margin-top: 2%;
+		margin-top: 15%;
+	}
+
+	.flex-complete {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.a_factura a:hover{
+		color:#a5d05e; 
+	}
+	.help {
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+    margin-top: 3%;
+    align-items: center;
+}
+
+.btn-continue .btn-green2{
+    width: 300px!important;
+}
+
+.ayuda{
+	font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-btn a{
+	font-size: 20px;
+}
+
+.btn-continue .btn-green2 a {
+    font-size: 20px;
+}
+
+.validate-thanks{
+	background: #0f4388;
+    color: #fff!important;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.contact-btn{
+	    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: #0f4388;
+}
+
+.codigo_text{
+	    font-size: 18px;
+    font-weight: bold;
+        display: flex;
+    justify-content: space-between;
+
+}
+.codigo {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 3%;
+       width: 57%;
+}
+
+.icon-pedido {
+    display: flex;
+}
+
+.text-ped{
+	margin-left: 2%;
+}
+
+.text-info p{
+	font-weight: normal;
+	color: #000;
+	margin-left: 6%;
+}
+
+.codigo p{
+	    font-size: 18px;
+    font-weight: bold;
+}
+
+.ul-mar{
+	    margin-left: -37px;
+}
+
+.icon-valores.icon-act2 {
+    width: 27%;
+}
+

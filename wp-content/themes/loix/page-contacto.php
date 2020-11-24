@@ -38,16 +38,16 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat.</p>
 
-      <div class="block-237 ">
+      <div class="block-237 ul-mar ">
         <ul>
           <li>
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+         <img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg">
             <div>
               <span style="color: #000; font-size: 16px; font-weight: 600;">Email</span> <br><span style="color: #000; font-size: 15px;">info@jakielondon.com</span>
               </div>
             </li>
               <li >
-                <i class="fa fa-phone" aria-hidden="true"></i>
+               <img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-call.svg">
                 <div>
                 <span style="color: #000; font-size: 16px; font-weight: 600;"> Phone</span> <br>
                 <span style="color: #000; font-size: 15px;">57 (4) 444 35 69</span>

@@ -39,7 +39,7 @@
       <section class="manuales">
         <h3>DESCARGA NUESTROS MANUALES</h3>
         <div class="container manuales-card" style="justify-content: space-around;" class="valores_child">
-          <div class="icon-valores icon-act">
+          <div class="icon-valores icon-act2">
             <div class="text-act2">
               <div  class="categ they">
                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_3.png">
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="icon-valores icon-act">
+        <div class="icon-valores icon-act2">
           <div class="text-act2">
             <div  class="categ they">
              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_4.png">
@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="icon-valores icon-act">
+      <div class="icon-valores icon-act2">
         <div class="text-act2">
           <div  class="categ they">
            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_2.png">
@@ -70,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div class="icon-valores icon-act">
+    <div class="icon-valores icon-act2">
       <div class="text-act2">
         <div  class="categ they">
          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_3.png">
@@ -80,7 +80,7 @@
       </div>
     </div>
   </div>
-  <div class="icon-valores icon-act">
+  <div class="icon-valores icon-act2">
     <div class="text-act2">
       <div  class="categ they">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_4.png">
@@ -90,7 +90,7 @@
     </div>
   </div>
 </div>
-<div class="icon-valores icon-act">
+<div class="icon-valores icon-act2">
   <div class="text-act2">
     <div  class="categ they">
      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_2.png">

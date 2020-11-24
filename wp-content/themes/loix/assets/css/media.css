@@ -1,7 +1,6 @@
 
 
 
-
  @media (min-width: 0px) and (max-width: 767px) {
 .nav__menu {
 
@@ -1085,6 +1084,16 @@ color: #a2d2b1!important;
 .impacto_child {
     display: flex;
     flex-direction: column;
+
+	}
+	.impacto_child_img{
+		height:auto;
+	}
+	
+	.impacto_child_img img {
+    width: 100%;
+    object-fit: contain;
+		
 }
 
 

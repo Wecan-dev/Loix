@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/<?php echo get_template_directory_uri(); ?>/assets/images/icon.png">
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/LOIX-01.png">
   <!-- awesone fonts css-->
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.css" rel="stylesheet" type="text/css">
   <!-- owl carousel css-->
