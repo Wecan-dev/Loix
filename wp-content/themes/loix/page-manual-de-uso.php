@@ -13,7 +13,7 @@
   </div>
   <section id="about" class="container impacto">
     <div class="impacto_child">
-      <div class="impacto_child_img">
+      <div class="impacto_child_img2">
         <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
       </div>
       <div class="impacto_informacion">

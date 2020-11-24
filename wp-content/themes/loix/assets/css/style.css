@@ -2101,6 +2101,7 @@ object-fit: cover;
 }
 
 .icon-valores.icon-act {
+
     width: 22%;
 }
 
@@ -2206,7 +2207,11 @@ position: absolute;
     .comunidad h3{
     	padding: 20px;
     	position: relative;
+
     }
+
+     
+    
 
         .comunidad h3::after{
     position: absolute;
@@ -2220,8 +2225,6 @@ position: absolute;
     background: #0f4388;
     }
 
-
-  
 
     .commit p a{
     	color: black; 
@@ -2560,6 +2563,7 @@ section.thanks {
     font-weight: bold;
 }
 
+
 .ul-mar{
 	    margin-left: -37px;
 }
@@ -2567,4 +2571,5 @@ section.thanks {
 .icon-valores.icon-act2 {
     width: 27%;
 }
+
 

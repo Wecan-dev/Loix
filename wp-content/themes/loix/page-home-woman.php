@@ -28,15 +28,15 @@
     </div>
 
     <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>SMART</p>
       </a>
     </div>
 
        <div class="link-page2">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+      <a href="#" class="link-page_item">
        <p>MEN</p>
       </a>
     </div>
@@ -101,8 +101,8 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
     </div>
         <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>
@@ -132,8 +132,8 @@
   </div>
 
     <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>
@@ -167,8 +167,8 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner3.png">
     </div>
           <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>
@@ -197,8 +197,8 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
   </div>
       <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>

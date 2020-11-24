@@ -30,8 +30,8 @@
     </div>
 
     <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
       <a href="<?php echo bloginfo('url').'/index.php/home-woman';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
        <p>WOMAN</p>
       </a>
     </div>
@@ -60,8 +60,8 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
   </div>
       <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>
@@ -96,8 +96,8 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
     </div>
         <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>
@@ -127,8 +127,8 @@
   </div>
 
     <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>
@@ -162,8 +162,8 @@
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner3.png">
     </div>
           <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>
@@ -192,8 +192,8 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
   </div>
       <div class="link-page">
-      <a href="#" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+      <a href="#" class="link-page_item">
        <p>WOMAN</p>
       </a>
     </div>

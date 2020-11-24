@@ -4,7 +4,7 @@
 
   <div class="header "  style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/banner.png);">
     <div class="mask-blog">
-      <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;">Contacto</h3>
+      <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;">CONTACTO</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
       tempor incididunt ut labore</p>
          <div id="section01" class="demo">
@@ -14,13 +14,13 @@
   </div>
   <div id="contacto" class="contact info-centro ">
     <div class="form">
-        <h5>Dejanos un mensaje</h5>
+        <h5>DEJANOS UN MENSAJE</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. </p>
         <div class="form2">
           <div class="  flex-this">
-          <input type="name" name="" placeholder="Nombre completo*">
-          <input type="email" name="" placeholder="Correo Electrónico*">
+          <input type="name" name="" placeholder="Nombre*">
+          <input type="email" name="" placeholder="Correo electrónico*">
             </div>
           <input type="text" name="" placeholder="Asunto">
           <textarea  name="message" id="message" placeholder="Tu comentario aquí."></textarea>
@@ -31,7 +31,7 @@
         </div>
       </div>
     <div class="information">
-      <h5>Nuestra Información</h5>
+      <h5>NUESTRA INFORMACIÓN</h5>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
