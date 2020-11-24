@@ -49,9 +49,9 @@
         <div class="ftco-footer-widget">
           <div class="block-237 ">
             <ul>   
-              <li><i class="fa fa-map-marker" aria-hidden="true"></i><span class="text">Carrera 51b #78-40</span></li>
-              <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="text">Email: info@jakielondon.com</span></a></li>
-              <li ><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="text">Phone: 57 (4) 444 35 69</span></a></li>
+              <li><a href="#"><img style="width: 10%; margin-right: 3px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loca.svg"><span class="text">Carrera 51b #78-40</span></a></li>
+              <li><a href="#"><img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg"><span class="text">Email: info@jakielondon.com</span></a></li>
+              <li ><a href="#"><img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-call.svg"><span class="text">Phone: 57 (4) 444 35 69</span></a></li>
 
             </ul>
           </div>
