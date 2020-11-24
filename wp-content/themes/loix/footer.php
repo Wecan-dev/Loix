@@ -22,7 +22,7 @@
           <div class="block-237 ">
             <ul>
               <li ><a href="  ">Job with us</a></li>
-              <li ><a href="<?php echo bloginfo('url').'/index.php/contacto';?>">Contact us</a></li>
+              <li ><a href="  ">Contact us</a></li>
               <li ><a href="  ">Stores</a></li>
               <li ><a href="  ">Terms and Conditions</a></li>
               <li ><a href="">Products</a></li>

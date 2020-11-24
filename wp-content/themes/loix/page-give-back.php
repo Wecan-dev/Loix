@@ -25,7 +25,7 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-    <div class="impacto_child_img">
+    <div class="impacto_child_img2">
       <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
     </div>
   </div>
@@ -39,7 +39,7 @@
       <div class="text-act2">
         <div style="margin-left: 5%;" class="categ">
           <p>ENVIROMENT</p>
-          <h5>THE FEELING OF<br> TREES</h5>
+          <h5>THE FEELING OF TREES</h5>
         </div>
         <div style="margin-left: 5%;" class="title-actv">
           <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -24,7 +24,7 @@
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-    <div class="impacto_child_img">
+    <div class="impacto_child_img2">
       <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/nosotros.png">
     </div>
   </div>

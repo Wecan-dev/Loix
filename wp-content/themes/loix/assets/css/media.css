@@ -19,12 +19,57 @@
     display: block;
 }
 
+.confirm{
+    width: auto;
+}
+
+.info-complete{
+    width: auto;
+}
+
+.flex-complete{
+    display: block;
+}
+
+section.page-exito {
+   
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.help{
+    display: block;
+    width: auto;
+    text-align: center;
+}
+.border-pago{
+    width: auto;
+}
+
+.text-info p{
+    margin-left: 0;
+}
+
+.page-exito h4 {
+    margin-bottom: 5%;
+}
+.icon-pedido{
+    display: block;
+}
+
 .commit {
     display: block;
     }
 
     .tab-line2{
         border-left: 1px solid transparent;
+    }
+    .codigo{
+        width: auto;
+    }
+
+    .codigo_text{
+        display: block;
     }
 
 .first {
@@ -1087,6 +1132,20 @@ color: #a2d2b1!important;
     flex-direction: column;
 }
 
+.codigo{
+    width: auto;
+}
+.help{
+    display: block;
+}
+.confirm{
+    width: auto;
+}
+
+.info-complete{
+    width: auto;
+}
+
 
 .card-post-right .card-post_item_two{
     width: auto;
@@ -1197,6 +1256,9 @@ section#about {
    width: auto;
 }
 
+.block-237 ul{
+	    margin-left: -15%;
+}
 
 .responsive-menu-btn.--is-open svg.close {
     left: 410px;
