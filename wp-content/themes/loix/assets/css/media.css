@@ -1,13 +1,17 @@
 
 
 
-
  @media (min-width: 0px) and (max-width: 767px) {
 .nav__menu {
 
     width: 100%;
 }
-
+.terminos h3:before{
+    display: none;
+}
+.terminos h3:after{
+    display: none;
+}
 .nav2{
 	margin-bottom: 0;
 }
@@ -1127,9 +1131,26 @@ color: #a2d2b1!important;
 .responsive-menu-btn.--is-open svg.close {
     left: 170px!important;
 }
+
+.terminos h3:before{
+left: 16%;
+}
+.terminos h3:after{
+left: 77%;
+}
 .impacto_child {
     display: flex;
     flex-direction: column;
+
+	}
+	.impacto_child_img{
+		height:auto;
+	}
+	
+	.impacto_child_img img {
+    width: 100%;
+    object-fit: contain;
+		
 }
 
 .codigo{
@@ -1268,5 +1289,9 @@ section#about {
 
 .products{
 	height: auto;
+}
+.ftco-footer .ftco-footer-widget h2 {
+
+    margin-left: 7%;
 }
 }

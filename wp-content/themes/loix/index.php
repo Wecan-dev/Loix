@@ -30,7 +30,7 @@
     </div>
 
     <div class="link-page">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
       <a href="<?php echo bloginfo('url').'/index.php/home-woman';?>" class="link-page_item">
        <p>WOMAN</p>
       </a>

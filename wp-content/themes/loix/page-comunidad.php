@@ -284,7 +284,7 @@ URL: https://gettemplates.co
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image.png">
             <div class="card-post_text">
               
-              <p>FITNESS</p>
+              <p>FASHION</p>
               <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. </h6>
               <div class="btn_direc">

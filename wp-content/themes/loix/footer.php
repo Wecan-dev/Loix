@@ -24,7 +24,7 @@
               <li ><a href="  ">Job with us</a></li>
               <li ><a href="  ">Contact us</a></li>
               <li ><a href="  ">Stores</a></li>
-              <li ><a href="  ">Terms and Conditions</a></li>
+              <li ><a href=" <?php echo bloginfo('url').'/index.php/terminos-y-condiciones';?> ">Terms and Conditions</a></li>
               <li ><a href="">Products</a></li>
             </ul>
           </div>
@@ -37,8 +37,8 @@
           <div class="block-237 ">
             <ul>
               <li ><a href="">Shipping</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Return and Exchanges</a></li>
+              <li><a href="<?php echo bloginfo('url').'/index.php/privacy-policy';?>">Privacy policy</a></li>
+              <li><a href="">Return and exchanges</a></li>
             </ul>
           </div>
         </div>

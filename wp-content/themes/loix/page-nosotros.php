@@ -134,6 +134,9 @@
   <h3>ULTIMAS VISTAS</h3>
       <div class="multiple-items">
         <div class="block4 card-product">
+           <a href="#" class="addwishlist">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </a>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card1.png">
           <div class="text-product">
             <h5>Classic Clock</h5>
@@ -160,6 +163,9 @@
         </div>
 
         <div class="block4 card-product">
+            <a href="#" class="addwishlist">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </a>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card2.png">
           <div class="text-product">
             <h5>Classic Clock</h5>
@@ -185,6 +191,9 @@
           </div>
         </div>
         <div class="block4 card-product">
+            <a href="#" class="addwishlist">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </a>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card1.png">
           <div class="text-product">
             <h5>Classic Clock</h5>
@@ -210,6 +219,9 @@
           </div>
         </div>
         <div class="block4 card-product">
+            <a href="#" class="addwishlist">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </a>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card2.png">
           <div class="text-product">
             <h5>Classic Clock</h5>

@@ -974,7 +974,7 @@ position: absolute;
 top: 26px;
 right: 20px;
 font-size: 20px;
-color: white;
+color: #0f4388;
 line-height: 0;
 -webkit-transform: scale(0);
 -moz-transform: scale(0);
@@ -1274,8 +1274,6 @@ cursor: pointer;
 width: 166px;
 font-size: 15px;
 }
-
-/* Change background color of buttons on hover */
 
 
 /* Create an active/current "tab button" class */
@@ -2099,8 +2097,10 @@ width: 280px;
 height: 300px;
 object-fit: cover;
 }
+
 .icon-valores.icon-act {
-width: 26%;
+
+    width: 22%;
 }
 
 .title-actv-2 h6{
@@ -2205,7 +2205,11 @@ position: absolute;
     .comunidad h3{
     	padding: 20px;
     	position: relative;
+
     }
+
+     
+    
 
         .comunidad h3::after{
     position: absolute;
@@ -2219,8 +2223,6 @@ position: absolute;
     background: #0f4388;
     }
 
-
-  
 
     .commit p a{
     	color: black; 
@@ -2559,3 +2561,70 @@ section.thanks {
     font-weight: bold;
 }
 
+
+.ul-mar{
+	    margin-left: -37px;
+}
+
+.icon-valores.icon-act2 {
+    width: 27%;
+}
+
+.addwishlist {
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: 96px;
+    font-size: 20px;
+    color: #0f4388;
+    line-height: 0;
+    z-index: 99;
+    transition: .5s;
+}
+
+.addwishlist a:hover{
+background:  #0f4388;
+transition: .5s;
+}
+
+i.fa.fa-heart {
+    color: #13468a;
+}
+
+i.fa.fa-heart:hover {
+    color: #13468a;
+}
+
+section.terminos.container {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.terminos h3{
+	    text-align: center;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.terminos h3:after{
+	position: absolute;
+	top: 46%;
+	bottom: 0;
+	right: 55px;
+	left: 68%;
+	background: #13468a;
+	content: '';
+	height: 2px;
+	width: 55px;
+	} 
+.terminos h3:before{
+	position: absolute;
+	top: 46%;
+	bottom: 0;
+	right:0;
+	left:  27%;
+	background: #13468a;
+	content: '';
+	height: 2px;
+	width: 55px;
+	} 
