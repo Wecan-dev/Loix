@@ -160,7 +160,7 @@
 
 <div class="login  ">
   <a class=" d-none d-sm-block " href="<?php bloginfo('url') ?>/mi-cuenta" >Iniciar Sesión</a>
-  <a class=" d-none d-sm-block ">Ayuda</a>
+  <a href="<?php bloginfo('url') ?>/faqs2" class=" d-none d-sm-block ">Ayuda</a>
   <i class="fa fa-shopping-bag" aria-hidden="true"></i>
     <i class="d-block d-sm-none fa fa-user" aria-hidden="true"></i>
 
