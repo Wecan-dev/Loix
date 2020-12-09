@@ -1,0 +1,22 @@
+2020-12-08T15:07:14+00:00 CRITICAL syntax error, unexpected '>' en /var/www/html/loix/wp-content/themes/loix/woocommerce/myaccount/form-lost-password.php en la línea 34
+
+2020-12-08T15:07:17+00:00 CRITICAL syntax error, unexpected '>' en /var/www/html/loix/wp-content/themes/loix/woocommerce/myaccount/form-lost-password.php en la línea 34
+
+2020-12-08T15:07:19+00:00 CRITICAL syntax error, unexpected '>' en /var/www/html/loix/wp-content/themes/loix/woocommerce/myaccount/form-lost-password.php en la línea 34
+
+2020-12-08T16:57:58+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/loix/wp-content/themes/loix/page-comunidad.php en la línea 48
+
+2020-12-08T17:51:46+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/loix/wp-content/themes/loix/page-comunidad.php en la línea 151
+
+2020-12-08T17:54:48+00:00 CRITICAL syntax error, unexpected ''post_type'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' en /var/www/html/loix/wp-content/themes/loix/page-comunidad.php en la línea 30
+
+2020-12-08T18:18:06+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/loix/wp-content/themes/loix/page-comunidad.php en la línea 307
+
+2020-12-08T20:08:58+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/loix/wp-content/themes/loix/functions.php en la línea 708
+
+2020-12-08T20:09:00+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/loix/wp-content/themes/loix/functions.php en la línea 708
+
+2020-12-08T20:09:30+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/loix/wp-content/themes/loix/functions.php en la línea 708
+
+2020-12-08T20:09:31+00:00 CRITICAL syntax error, unexpected ')' en /var/www/html/loix/wp-content/themes/loix/functions.php en la línea 708
+

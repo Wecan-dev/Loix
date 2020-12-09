@@ -177,13 +177,14 @@ URL: https://gettemplates.co
   </div>
   <h3>EMBAJADORES</h3>
   <div class="posts">
-
+<?php $loop = new WP_Query( array( 'post_type' => 'post' , 'category_name' => 'embajadores' ) ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     <div class="card-post">
       <div class="card-post_item">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image.png">
         <div class="card-post_text">
           <p>BE PART OF</p>
-          <h4>THE COMMUNITY</h4>
+          <h4><?php the_title(); ?></h4>
           <div class="btn_direc">
             <div class="btn_custom2">
               <a href="">INSCRÍBETE</a>
@@ -191,26 +192,15 @@ URL: https://gettemplates.co
           </div>
         </div>
       </div>
+        <?php endwhile; ?>
       <div class="flex-this">
-        <div class="card-post_item_two">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image.png">
-          <div class="card-post_text">
-            <div class="flex-this">
-              <p>EVENTO</p>
-              <p style="color: #898a92;"><i class="fa fa-calendar" aria-hidden="true"></i>Mayo, 22 del 2020</p></div>
-              <h4>THE COMMUNITY</h4>
-              <div class="btn_direc">
-                <div class="btn_custom3">
-                  <a href="">LEER MÁS</a>
-                </div>
-              </div>
-            </div>
-          </div>
+   <?php $loop = new WP_Query( array( 'post_type' =>'post' ,'posts_per_page' => '2', 'category_name' => 'evento' ) ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="card-post_item_two">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image.png">
             <div class="card-post_text">
               <p>EVENTO</p>
-              <h4>THE COMMUNITY</h4>
+              <h4><?php the_title(); ?></h4>
               <div class="btn_direc">
                 <div class="btn_custom3">
                   <a href="">LEER MÁS</a>
@@ -218,27 +208,16 @@ URL: https://gettemplates.co
               </div>
             </div>
           </div>
+            <?php endwhile; ?>
         </div>
         <div class="flex-this">
-          <div class="card-post_item_two">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image.png">
-            <div class="card-post_text">
-              <div class="flex-this">
-                <p>EVENTO</p>
-                <p style="color: #898a92;"><i class="fa fa-calendar" aria-hidden="true"></i>Mayo, 22 del 2020</p></div>
-                <h4>THE COMMUNITY</h4>
-                <div class="btn_direc">
-                  <div class="btn_custom3">
-                    <a href="">LEER MÁS</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+       <?php $loop = new WP_Query( array( 'post_type' =>'post' , 'posts_per_page' => 2, 'offset' => 2, 'paged' => $paged , 'category_name' => 'evento' ) ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="card-post_item_two">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image.png">
               <div class="card-post_text">
                 <p>EVENTO</p>
-                <h4>THE COMMUNITY</h4>
+                <h4><?php the_title(); ?></h4>
                 <div class="btn_direc">
                   <div class="btn_custom3">
                     <a href="">LEER MÁS</a>
@@ -246,6 +225,7 @@ URL: https://gettemplates.co
                 </div>
               </div>
             </div>
+              <?php endwhile; ?>
           </div>
         </div>
         <div class="card-post-right">

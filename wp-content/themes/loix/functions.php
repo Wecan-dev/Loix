@@ -265,6 +265,68 @@ if ( ! function_exists('smart') ) {
     add_action( 'init', 'smart', 0 );
     
     }
+      // Register Custom Post Type
+if ( ! function_exists('preguntas_frecuentes') ) {
+  
+    // Register Custom Post Type
+    function preguntas_frecuentes() {
+    
+        $labels = array(
+            'name'                  => _x( 'preguntas_frecuentes', 'Post Type General Name', 'text_domain' ),
+            'singular_name'         => _x( 'preguntas_frecuentes', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'             => __( 'preguntas', 'text_domain' ),
+            'name_admin_bar'        => __( 'preguntas', 'text_domain' ),
+            'archives'              => __( 'Item Archives', 'text_domain' ),
+            'attributes'            => __( 'Item Attributes', 'text_domain' ),
+            'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+            'all_items'             => __( 'All Items', 'text_domain' ),
+            'add_new_item'          => __( 'Add New Item', 'text_domain' ),
+            'add_new'               => __( 'Add New', 'text_domain' ),
+            'new_item'              => __( 'New Item', 'text_domain' ),
+            'edit_item'             => __( 'Edit Item', 'text_domain' ),
+            'update_item'           => __( 'Update Item', 'text_domain' ),
+            'view_item'             => __( 'View Item', 'text_domain' ),
+            'view_items'            => __( 'View Items', 'text_domain' ),
+            'search_items'          => __( 'Search Item', 'text_domain' ),
+            'not_found'             => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+            'featured_image'        => __( 'Featured Image', 'text_domain' ),
+            'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+            'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+            'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+            'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+            'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+            'items_list'            => __( 'Items list', 'text_domain' ),
+            'items_list_navigation' => __( 'Items list navigation', 'text_domain' ),
+            'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+        );
+        $args = array(
+            'label'                 => __( 'preguntas_frecuentes', 'text_domain' ),
+            'description'           => __( 'preguntas_frecuentes de trasnsporte', 'text_domain' ),
+            'labels'                => $labels,
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+            'taxonomies'            => array( 'category', 'post_tag' ),
+            'hierarchical'          => false,
+            'public'                => true,
+            'show_ui'               => true,
+            'show_in_menu'          => true,
+            'menu_position'         => 5,
+            'menu_icon'             => 'dashicons-clock
+',
+            'show_in_admin_bar'     => true,
+            'show_in_nav_menus'     => true,
+            'can_export'            => true,
+            'has_archive'           => true,
+            'exclude_from_search'   => false,
+            'publicly_queryable'    => true,
+            'capability_type'       => 'page',
+        );
+        register_post_type( 'preguntas_frecuentes', $args );
+    
+    }
+    add_action( 'init', 'preguntas_frecuentes', 0 );
+    
+    }
  
 ////////PANELES//////////////////////////////////////////77
 /***************Functions theme ********************/
@@ -305,48 +367,6 @@ $wp_customize->add_panel('smart',
   require_once trailingslashit( get_template_directory() ) . 'secciones/smart.php';
 
 
-
-
-
-
-
-
-
-   /*************Banner Contacto*******/
-    $wp_customize->add_section('contacto', array (
-    'title' => 'Contacto',
-    'panel' => 'panel1'
-  ));
-  // texto de red
-    $wp_customize->add_setting('contacto_titulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_contacto_titulo', array (
-      'description' => 'titulo de la contacto',
-      'section' => 'contacto',
-      'settings' => 'contacto_titulo',
-    )));  
-    // texto de red
-    $wp_customize->add_setting('contacto_subtitulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_contacto_subtitulo', array (
-      'description' => 'Contenido del contacto',
-      'section' => 'contacto',
-      'settings' => 'contacto_subtitulo',
-      'type' => 'textarea'
-    )));  
-//image
-  $wp_customize->add_setting('contacto_imagen');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'contacto_imagen', array (
-    'label' => 'Imagen',
-    'description' => 'Imagen',
-    'section' => 'contacto',
-    'settings' => 'contacto_imagen'
-  )));
    /***************************************************/
    /*******************Rompe sección***********/
     $wp_customize->add_panel('panel2',
@@ -355,121 +375,9 @@ $wp_customize->add_panel('smart',
             'priority' => 1,
             )
         );
+  require_once trailingslashit( get_template_directory() ) . 'secciones/rompe-seccion-del-home.php';
   
-  
-  $wp_customize->add_section('rompe_seccion', array (
-    'title' => 'Rompe sección 1',
-    'panel' => 'panel2'
-  ));
-  //image
-  $wp_customize->add_setting('rompe_seccion_item_1');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'rompe_seccion_item_1', array (
-    'label' => 'Imagen 1',
-    'description' => 'Ícono',
-    'section' => 'rompe_seccion',
-    'settings' => 'rompe_seccion_item_1'
-  )));
-  // texto de red
-    $wp_customize->add_setting('rompe_seccion_titulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_titulo', array (
-      'description' => 'titulo de la rompe_seccion',
-      'section' => 'rompe_seccion',
-      'settings' => 'rompe_seccion_titulo',
-    )));  
-    // texto de red
-    $wp_customize->add_setting('rompe_seccion_subtitulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_subtitulo', array (
-      'description' => 'Contenido del rompe_seccion',
-      'section' => 'rompe_seccion',
-      'settings' => 'rompe_seccion_subtitulo',
-      'type' => 'textarea'
-    )));  
-     // texto de red
-    $wp_customize->add_setting('rompe_seccion_texto_del_boton', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_texto_del_boton', array (
-      'description' => 'Texto del boton',
-      'section' => 'rompe_seccion',
-      'settings' => 'rompe_seccion_texto_del_boton',
-    )));  
-       // texto de red
-    $wp_customize->add_setting('rompe_seccion_url_del_boton', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_url_del_boton', array (
-      'description' => 'Url del boton',
-      'section' => 'rompe_seccion',
-      'settings' => 'rompe_seccion_url_del_boton',
-    ))); 
 
-    //////////////////Rompe sección 2/////////////////////////
-    	 $wp_customize->add_section('rompe_seccion_2', array (
-    'title' => 'Rompe sección 2',
-    'panel' => 'panel2'
-  ));
-  //image
-  $wp_customize->add_setting('rompe_seccion_2_item_1');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'rompe_seccion_2_item_1', array (
-    'label' => 'Imagen 1',
-    'description' => 'Ícono',
-    'section' => 'rompe_seccion_2',
-    'settings' => 'rompe_seccion_2_item_1'
-  )));
-  // texto de red
-    $wp_customize->add_setting('rompe_seccion_2_titulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_2_titulo', array (
-      'description' => 'titulo de la rompe_seccion_2',
-      'section' => 'rompe_seccion_2',
-      'settings' => 'rompe_seccion_2_titulo',
-    )));  
-    // texto de red
-    $wp_customize->add_setting('rompe_seccion_2_subtitulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_2_subtitulo', array (
-      'description' => 'Contenido del rompe_seccion_2',
-      'section' => 'rompe_seccion_2',
-      'settings' => 'rompe_seccion_2_subtitulo',
-      'type' => 'textarea'
-    )));  
-     // texto de red
-    $wp_customize->add_setting('rompe_seccion_2_texto_del_boton', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_2_texto_del_boton', array (
-      'description' => 'Texto del boton',
-      'section' => 'rompe_seccion_2',
-      'settings' => 'rompe_seccion_2_texto_del_boton',
-    )));  
-       // texto de red
-    $wp_customize->add_setting('rompe_seccion_2_url_del_boton', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_rompe_seccion_2_url_del_boton', array (
-      'description' => 'Url del boton',
-      'section' => 'rompe_seccion_2',
-      'settings' => 'rompe_seccion_url_del_boton',
-    ))); 
-    //////////////////////////////////////////////////////////
-  
-   /********************************************/
 
    /***********PÁGINA NOSOTROS *************/
 
@@ -481,252 +389,8 @@ $wp_customize->add_panel('smart',
             )
         );
   
-  
-  $wp_customize->add_section('nosotros_banner', array (
-    'title' => 'Banner',
-    'panel' => 'panel3'
-  ));
-  //image
-  $wp_customize->add_setting('nosotros_banner_img');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_banner_img', array (
-    'label' => 'Banner',
-    'description' => 'Imagen',
-    'section' => 'nosotros_banner',
-    'settings' => 'nosotros_banner_img'
-  )));
+  require_once trailingslashit( get_template_directory() ) . 'secciones/pagina-nosotros.php';
 
-   // texto de red
-    $wp_customize->add_setting('nosotros_banner_titulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_banner_titulo', array (
-      'description' => 'Titulo',
-      'section' => 'nosotros_banner',
-      'settings' => 'nosotros_banner_titulo',
-    ))); 
-       // texto de red
-    $wp_customize->add_setting('nosotros_banner_subtitulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_banner_subtitulo', array (
-      'description' => 'Subtitulo',
-      'section' => 'nosotros_banner',
-      'settings' => 'nosotros_banner_subtitulo',
-      'type' => 'textarea'
-    ))); 
-////////////////////////HISTORIA/////////////////
- $wp_customize->add_section('nosotros_historia', array (
-    'title' => 'Historia',
-    'panel' => 'panel3'
-  ));
- // texto de red
-    $wp_customize->add_setting('nosotros_historia', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_historia', array (
-      'description' => 'Titulo',
-      'section' => 'nosotros_historia',
-      'settings' => 'nosotros_historia',
-    ))); 
-    // texto de red
-    $wp_customize->add_setting('nosotros_historia_contenido', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_historia_contenido', array (
-      'description' => 'Contenido',
-      'section' => 'nosotros_historia',
-      'settings' => 'nosotros_historia_contenido',
-      'type' => 'textarea'
-    ))); 
-    //image
-  $wp_customize->add_setting('nosotros_historia_img');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_historia_img', array (
-    'label' => 'Imagen',
-    'section' => 'nosotros_historia',
-    'settings' => 'nosotros_historia_img'
-  )));
-    ////////////////////////////////////////////////
-  ////////////////////Iniciativa//////////////////////////
-$wp_customize->add_section('nosotros_iniciativa', array (
-    'title' => 'Iniciativa',
-    'panel' => 'panel3'
-  ));
-  // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_titulo_principal', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_titulo_principal', array (
-      'description' => 'Título Principal',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_titulo_principal',
-    ))); 
- //image
-  $wp_customize->add_setting('nosotros_iniciativa_img');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_iniciativa_img', array (
-    'label' => 'Imagen',
-    'section' => 'nosotros_iniciativa',
-    'settings' => 'nosotros_iniciativa_img'
-  )));
-   // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_titulo', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_titulo', array (
-      'description' => 'Título',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_titulo',
-    ))); 
-    // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_contenido', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_contenido', array (
-      'description' => 'Contenido',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_contenido',
-      'type' => 'textarea'
-    ))); 
-
-
-    //image
-  $wp_customize->add_setting('nosotros_iniciativa_img_2');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_iniciativa_img_2', array (
-    'label' => 'Imagen',
-    'section' => 'nosotros_iniciativa',
-    'settings' => 'nosotros_iniciativa_img_2'
-  )));
-   // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_titulo_2', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_titulo_2', array (
-      'description' => 'Título',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_titulo_2',
-    ))); 
-    // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_contenido_2', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_contenido_2', array (
-      'description' => 'Contenido',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_contenido_2',
-      'type' => 'textarea'
-    ))); 
-
-    //image
-  $wp_customize->add_setting('nosotros_iniciativa_img_3');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_iniciativa_img_3', array (
-    'label' => 'Imagen',
-    'section' => 'nosotros_iniciativa',
-    'settings' => 'nosotros_iniciativa_img_3'
-  )));
-   // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_titulo_3', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_titulo_3', array (
-      'description' => 'Título',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_titulo_3',
-    ))); 
-    // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_contenido_3', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_contenido_3', array (
-      'description' => 'Contenido',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_contenido_3',
-      'type' => 'textarea'
-    ))); 
-
-
-     //image
-  $wp_customize->add_setting('nosotros_iniciativa_img_4');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_iniciativa_img_4', array (
-    'label' => 'Imagen',
-    'section' => 'nosotros_iniciativa',
-    'settings' => 'nosotros_iniciativa_img_4'
-  )));
-   // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_titulo_4', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_titulo_4', array (
-      'description' => 'Título',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_titulo_4',
-    ))); 
-    // texto de red
-    $wp_customize->add_setting('nosotros_iniciativa_contenido_4', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_contenido_4', array (
-      'description' => 'Contenido',
-      'section' => 'nosotros_iniciativa',
-      'settings' => 'nosotros_iniciativa_contenido_4',
-      'type' => 'textarea'
-    ))); 
-  //////////////////////////////////////////////////////
-    //////////////MISIÓN///////////////////////////////
-$wp_customize->add_section('nosotros_mision', array (
-    'title' => 'Misión',
-    'panel' => 'panel3'
-  ));
-  // texto de red
-    $wp_customize->add_setting('nosotros_mision_titulo_principal', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_mision_titulo_principal', array (
-      'description' => 'Título Principal',
-      'section' => 'nosotros_mision',
-      'settings' => 'nosotros_mision_titulo_principal',
-    ))); 
-
-     // texto de red
-    $wp_customize->add_setting('nosotros_mision_contenido', array(
-      'default' => ''
-    ));
-    
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_mision_contenido', array (
-      'description' => 'Contenido',
-      'section' => 'nosotros_mision',
-      'settings' => 'nosotros_mision_contenido',
-      'type' => 'textarea'
-    ))); 
-  //image
-  $wp_customize->add_setting('nosotros_mision_img');
-  
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_mision_img', array (
-    'label' => 'Imagen',
-    'section' => 'nosotros_mision',
-    'settings' => 'nosotros_mision_img'
-  )));
-    ///////////////////////////////////////////////////
-
-   /***************************************************/
     /*******************GIVING BACK***********/
     $wp_customize->add_panel('panel4',
         array(
@@ -1006,6 +670,113 @@ $wp_customize->add_panel('contacto',
     'settings' => 'contacto_imagen'
   )));
    /***************************************************/
+/*****************FOOTER*************************************/
+$wp_customize->add_panel('footer',
+        array(
+            'title' => 'Footer',
+            'priority' => 1,
+            )
+        );
+  $wp_customize->add_section('logo', array (
+    'title' => 'Logo',
+    'panel' => 'footer'
+  ));
+  //image
+  $wp_customize->add_setting('logo');
+  
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'logo', array (
+    'label' => 'Imagen',
+    'description' => 'Imagen',
+    'section' => 'logo',
+    'settings' => 'logo'
+  )));
+   $wp_customize->add_section('slogan', array (
+    'title' => 'Slogan',
+    'panel' => 'footer'
+  ));
+   // texto de red
+    $wp_customize->add_setting('slogan', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_slogan', array (
+      'description' => 'Slogan del footer',
+      'section' => 'slogan',
+      'settings' => 'slogan',
+      'type' => 'textarea'
+    )));  
+
+     $wp_customize->add_section('footer_redes_sociales', array (
+    'title' => 'Redes Sociales footer',
+    'panel' => 'footer'
+  ));
+      // texto de red
+    $wp_customize->add_setting('facebook', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_facebook', array (
+      'description' => 'URL Facebook',
+      'section' => 'footer_redes_sociales',
+      'settings' => 'facebook'
+    )));  
+
+     // texto de red
+    $wp_customize->add_setting('instagram', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_instagram', array (
+      'description' => 'URL Instagram',
+      'section' => 'footer_redes_sociales',
+      'settings' => 'instagram'
+    )));  
+
+      $wp_customize->add_section('direccion', array (
+    'title' => 'Dirección',
+    'panel' => 'footer'
+  ));
+       // texto de red
+    $wp_customize->add_setting('footer_direccion', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_footer_direccion', array (
+      'description' => 'Dirección',
+      'section' => 'direccion',
+      'settings' => 'footer_direccion'
+    )));  
+
+       $wp_customize->add_section('email', array (
+    'title' => 'Correo eletrónico',
+    'panel' => 'footer'
+  ));
+       // texto de red
+    $wp_customize->add_setting('footer_email', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_footer_email', array (
+      'description' => 'Correo eletrónico',
+      'section' => 'email',
+      'settings' => 'footer_email'
+    )));  
+
+      $wp_customize->add_section('telefono', array (
+    'title' => 'Teléfono',
+    'panel' => 'footer'
+  ));
+       // texto de red
+    $wp_customize->add_setting('footer_telefono', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_footer_telefono', array (
+      'description' => 'Teléfono',
+      'section' => 'telefono',
+      'settings' => 'footer_telefono'
+    )));  
+
 
   /*********************************************************************/
  }

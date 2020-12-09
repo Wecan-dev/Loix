@@ -3,15 +3,26 @@
     <div class="row mb-5">
       <div class="col-md-3 logo-footer">
         <div class="ftco-footer-widget">
+            <?php if (get_theme_mod('logo') != NULL){?>  
           <div class="logo-footer" style="justify-content: flex-start;">
 
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.png">
+            <img src="<?php echo get_theme_mod('logo') ?>">
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
+            <?php }
+         ?> 
+           <?php if (get_theme_mod('slogan') != NULL){?>  
+          <p><?php echo get_theme_mod('slogan') ?></p>
+            <?php }
+         ?> 
           <div class="ftco-footer-social list-unstyled ">
-            <li class="ftco-animate"><a href="#"></a><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            <li class="ftco-animate"><a href="#"></a><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              <?php if (get_theme_mod('facebook') != NULL){?>  
+            <li class="ftco-animate"><a href="<?php echo get_theme_mod('facebook') ?>"></a><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              <?php }
+         ?> 
+           <?php if (get_theme_mod('facebook') != NULL){?>  
+            <li class="ftco-animate"><a href="<?php echo get_theme_mod('instagram') ?>"></a><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <?php }
+         ?> 
           </div>
         </div>
       </div>
@@ -49,10 +60,18 @@
         <div class="ftco-footer-widget">
           <div class="block-237 ">
             <ul>   
-              <li><a href="#"><img style="width: 10%; margin-right: 3px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loca.svg"><span class="text">Carrera 51b #78-40</span></a></li>
-              <li><a href="#"><img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg"><span class="text">Email: info@jakielondon.com</span></a></li>
-              <li ><a href="#"><img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-call.svg"><span class="text">Phone: 57 (4) 444 35 69</span></a></li>
-
+                 <?php if (get_theme_mod('footer_direccion') != NULL){?>  
+              <li><a href="#"><img style="width: 10%; margin-right: 3px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loca.svg"><span class="text"><?php echo get_theme_mod('footer_direccion') ?></span></a></li>
+              <?php }
+         ?> 
+            <?php if (get_theme_mod('footer_email') != NULL){?>  
+              <li><a href="mailto:"><img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg"><span class="text">Email: <?php echo get_theme_mod('footer_email') ?></span></a></li>
+               <?php }
+         ?> 
+           <?php if (get_theme_mod('footer_telefono') != NULL){?>  
+              <li ><a href="#"><img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-call.svg"><span class="text">Phone: <?php echo get_theme_mod('footer_telefono') ?></span></a></li>
+  <?php }
+         ?> 
             </ul>
           </div>
         </div>
