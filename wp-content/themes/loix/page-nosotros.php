@@ -1,10 +1,19 @@
  <?php get_header(); ?>
- <div class="blog-page" style="background-color: #fff!important; ">
+
 <?php if (get_theme_mod('nosotros_banner_img') != NULL){?>  
-  <div class="header "  style="background-image: url(<?php echo get_theme_mod('nosotros_banner_img') ?>);">
+ <div class="blog-page" style="background-color: #fff!important; ">
+	   <?php  $extension = pathinfo(get_theme_mod('nosotros_banner_img'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <div class="header "  style="background-image: url(<?php echo get_theme_mod('nosotros_banner_img') ?>);">
+              <?php } else { ?> 
+                    <video class="header header-video__about" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('nosotros_banner_img') ?>" type="video/mp4">
+                    </video>  
+		     <?php } ?>
+
+
     <div class="mask-blog">
-        <?php }
-         ?> 
+       
        <?php if (get_theme_mod('nosotros_banner_titulo') != NULL){?>  
       <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;"><?php echo get_theme_mod('nosotros_banner_titulo') ?></h3>
         <?php }
@@ -18,6 +27,8 @@
         </div>
     </div>
   </div>
+	  <?php }
+         ?> 
 <section id="about" class="container impacto">
   <div class="impacto_child">
     <div class="impacto_informacion">
@@ -161,20 +172,6 @@
         <?php echo get_theme_mod('nosotros_mision_contenido') ?> </p>
 <?php }
          ?> 
-        <div style="display: flex; align-items: baseline;">
-        <span class="fa fa-check"></span> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>    </div>
-       <div style="display: flex; align-items: baseline;">
-        <span class="fa fa-check"></span> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>    </div>  
-         <div style="display: flex; align-items: baseline;">
-        <span class="fa fa-check"></span> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>   
-         </div>
-         <div style="display: flex; align-items: baseline;">
-        <span class="fa fa-check"></span> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>   
-         </div>  
-          <div style="display: flex; align-items: baseline;">
-        <span class="fa fa-check"></span> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>  
-          </div>
-  
 
   </div>
    <?php if (get_theme_mod('nosotros_mision_img') != NULL){?>
@@ -186,7 +183,7 @@
 </section>
 
 <section class="vistas">
-  <h3>ULTIMAS VISTAS</h3>
+  <h3>VISTOS RECIENTEMENTE</h3>
       <div class="multiple-items">
         <div class="block4 card-product">
            <a href="#" class="addwishlist">

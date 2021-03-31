@@ -47,8 +47,8 @@ $wp_customize->add_section('slider', array (
   //image
   $wp_customize->add_setting('slider_item_1');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_item_1', array (
-    'label' => 'Imagen 1',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'slider_item_1', array (
+    'label' => 'Imagen o Video',
     'description' => 'Ícono',
     'section' => 'slider',
     'settings' => 'slider_item_1'
@@ -99,9 +99,9 @@ $wp_customize->add_section('slider', array (
   //image
   $wp_customize->add_setting('slider_item_2');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_item_2', array (
-    'label' => 'Item 1',
-    'description' => 'Ícono',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'slider_item_2', array (
+    'label' => 'Imagen o Video',
+    'description' => 'Imagen o Video',
     'section' => 'slider',
     'settings' => 'slider_item_2'
   )));
@@ -151,9 +151,9 @@ $wp_customize->add_section('slider', array (
   //image
   $wp_customize->add_setting('slider_item_3');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_item_3', array (
-    'label' => 'Item 1',
-    'description' => 'Ícono',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'slider_item_3', array (
+    'label' => 'Imagen o Video',
+    'description' => 'Imagen o Video',
     'section' => 'slider',
     'settings' => 'slider_item_3'
   )));
@@ -203,9 +203,9 @@ $wp_customize->add_section('slider', array (
   //image
   $wp_customize->add_setting('slider_item_4');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_item_4', array (
-    'label' => 'Item 1',
-    'description' => 'Ícono',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'slider_item_4', array (
+    'label' => 'Imagen o Video',
+    'description' => 'Imagen o Video',
     'section' => 'slider',
     'settings' => 'slider_item_4'
   )));

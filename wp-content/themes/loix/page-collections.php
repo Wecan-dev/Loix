@@ -10,14 +10,14 @@
           <a href="#collections"><span></span></a>
         </div>
          <div class="link-page">
-      <a href="#" class="link-page_item">
+      <a href="<?php bloginfo('url') ?>/home-woman" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
        <p>WOMAN</p>
       </a>
     </div>
 
        <div class="link-page2">
-      <a href="#" class="link-page_item">
+      <a href="<?php bloginfo('url') ?>/" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
        <p>MEN</p>
       </a>
@@ -26,83 +26,35 @@
   </div>
 
 <div id="collections" class="main-banner">
+	 <?php $args = array( 'post_type' => 'collection' ); ?>
+            <?php $loop = new WP_Query( $args ); ?>
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
   <div class="main-banner-card">
 
     <div class="main-banner__item">
       <div class="mask">
         <div class="main-banner__text">
           <div class="main-banner__title">
-            <p>ELITE</p>
+            <p><?php the_title(); ?></p>
           </div>
           <div class="main-banner__description">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
+            <p><?php the_content(); ?>
             </p>
           </div>
           <div class="btn_custom" >
-           <a href="#gtco-footer">VIEW</a>
+           <a href="<?php the_field('collection_url_del_boton'); ?> "><?php the_field('collection_texto_del_boton'); ?> </a>
          </div>
       </div>
     </div>
     <div class="main-banner__img2">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner3.png">
+      <img src="<?php echo get_the_post_thumbnail_url(); ?>">
     </div>
   
   </div>
 
 </div>
-  <div class="main-banner-card">
-
-    <div class="main-banner__item">
-      <div class="mask">
-        <div class="main-banner__text">
-          <div class="main-banner__title">
-            <p>MEMORIES</p>
-          </div>
-          <div class="main-banner__description">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="btn_custom" >
-           <a href="#gtco-footer">VIEW</a>
-         </div>
-      </div>
-    </div>
-    <div class="main-banner__img2">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
-    </div>
-  
-  </div>
-
+   <?php endwhile; ?> 
 </div>
 
-  <div class="main-banner-card">
-
-    <div class="main-banner__item">
-      <div class="mask">
-        <div class="main-banner__text">
-          <div class="main-banner__title">
-            <p>ESSENCIALS</p>
-          </div>
-          <div class="main-banner__description">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div class="btn_custom" >
-           <a href="#gtco-footer">VIEW</a>
-         </div>
-      </div>
-    </div>
-    <div class="main-banner__img2">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/banner3.png">
-    </div>
-  
-  </div>
-
-</div>
-
-</div>
 
  <?php get_footer(); ?>

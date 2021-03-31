@@ -47,8 +47,8 @@ $wp_customize->add_section('women_banner3', array (
   //image
   $wp_customize->add_setting('women_banner3_slider_item_1');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'women_banner3_slider_item_1', array (
-    'label' => 'Imagen 1',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'women_banner3_slider_item_1', array (
+    'label' => 'Imagen o Video',
     'description' => 'Ícono',
     'section' => 'women_banner3',
     'settings' => 'women_banner3_slider_item_1'
@@ -99,8 +99,8 @@ $wp_customize->add_section('women_banner3', array (
   //image
   $wp_customize->add_setting('women_banner3_slider_item_2');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'women_banner3_slider_item_2', array (
-    'label' => 'Item 1',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'women_banner3_slider_item_2', array (
+    'label' => 'Imagen o Video',
     'description' => 'Ícono',
     'section' => 'women_banner3',
     'settings' => 'women_banner3_slider_item_2'
@@ -151,8 +151,8 @@ $wp_customize->add_section('women_banner3', array (
   //image
   $wp_customize->add_setting('women_banner3_slider_item_3');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'women_banner3_slider_item_3', array (
-    'label' => 'Item 1',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'women_banner3_slider_item_3', array (
+    'label' => 'Imagen o Video',
     'description' => 'Ícono',
     'section' => 'women_banner3',
     'settings' => 'women_banner3_slider_item_3'
@@ -203,8 +203,8 @@ $wp_customize->add_section('women_banner3', array (
   //image
   $wp_customize->add_setting('women_banner3_slider_item_4');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'women_banner3_slider_item_4', array (
-    'label' => 'Item 1',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'women_banner3_slider_item_4', array (
+    'label' => 'Imagen o Video',
     'description' => 'Ícono',
     'section' => 'women_banner3',
     'settings' => 'women_banner3_slider_item_4'

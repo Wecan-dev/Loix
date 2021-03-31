@@ -27,8 +27,8 @@
 //image
   $wp_customize->add_setting('smart_imagen');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'smart_imagen', array (
-    'label' => 'Imagen',
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'smart_imagen', array (
+    'label' => 'Imagen o Video',
     'description' => 'Imagen',
     'section' => 'banner_smart',
     'settings' => 'smart_imagen'

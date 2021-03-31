@@ -1,0 +1,110 @@
+2021-03-30T14:59:32+00:00 CRITICAL syntax error, unexpected '$term' (T_VARIABLE), expecting ',' or ')' en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 19
+
+2021-03-30T15:00:17+00:00 CRITICAL syntax error, unexpected '$term' (T_VARIABLE), expecting ',' or ')' en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 19
+
+2021-03-30T15:01:01+00:00 CRITICAL Uncaught Error: Call to undefined function termmeta_value_img() in /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php:12
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 12
+
+2021-03-30T15:10:17+00:00 CRITICAL Uncaught Error: Call to undefined function termmeta_value_img() in /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php:15
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 15
+
+2021-03-30T15:26:04+00:00 CRITICAL Uncaught Error: Call to undefined function termmeta_value_img() in /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php:15
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 15
+
+2021-03-30T15:26:44+00:00 CRITICAL Uncaught Error: Call to undefined function termmeta_value_img() in /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php:15
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 15
+
+2021-03-30T15:27:20+00:00 CRITICAL Uncaught Error: Call to undefined function termmeta_value_img() in /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php:15
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 15
+
+2021-03-30T15:30:23+00:00 CRITICAL Uncaught Error: Call to undefined function termmeta_value_img() in /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php:15
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/page-faqs2.php en la línea 15
+
+2021-03-30T15:41:20+00:00 CRITICAL Uncaught Error: Call to undefined function the_exerpt() in /var/www/html/Loix/wp-content/themes/loix/archive.php:203
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 203
+
+2021-03-30T15:44:04+00:00 CRITICAL Uncaught Error: Call to undefined function the_exerpt() in /var/www/html/Loix/wp-content/themes/loix/archive.php:203
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 203
+
+2021-03-30T15:53:38+00:00 CRITICAL Uncaught Error: Call to undefined function the_exerpt() in /var/www/html/Loix/wp-content/themes/loix/archive.php:203
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 203
+
+2021-03-30T15:55:01+00:00 CRITICAL Uncaught Error: Call to undefined function the_exerpt() in /var/www/html/Loix/wp-content/themes/loix/archive.php:203
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 203
+
+2021-03-30T15:55:30+00:00 CRITICAL Uncaught Error: Call to undefined function the_exerpt() in /var/www/html/Loix/wp-content/themes/loix/archive.php:203
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 203
+
+2021-03-30T15:59:08+00:00 CRITICAL Uncaught Error: Call to undefined function the_exerpt() in /var/www/html/Loix/wp-content/themes/loix/archive.php:203
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 203
+
+2021-03-30T16:27:08+00:00 CRITICAL Uncaught Error: Call to undefined function the_exerpt() in /var/www/html/Loix/wp-content/themes/loix/archive.php:244
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/Loix/wp-blog-header.php(19): require_once('/var/www/html/L...')
+#2 /var/www/html/Loix/index.php(17): require('/var/www/html/L...')
+#3 {main}
+  thrown en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 244
+
+2021-03-30T19:15:58+00:00 CRITICAL syntax error, unexpected '}', expecting end of file en /var/www/html/Loix/wp-content/themes/loix/page-contacto.php en la línea 45
+

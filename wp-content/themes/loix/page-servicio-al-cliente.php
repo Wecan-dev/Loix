@@ -36,7 +36,7 @@
       </div>
       <div class="btn_faqs">
           <div class="btn-black">
-      <a href="">PREGUNTAS FRECUENTES</a>
+      <a href="<?php echo bloginfo('url').'/faqs2';?>">PREGUNTAS FRECUENTES</a>
     </div>
   </div>
 </section>

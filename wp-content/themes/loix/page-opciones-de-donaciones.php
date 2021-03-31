@@ -15,85 +15,26 @@
   </div>
 
 <section id="about" class="container impacto">
+	 <?php $args = array( 'post_type' => 'opciones_donaciones' ); ?>
+            <?php $loop = new WP_Query( $args ); ?>
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
   <div class="impacto_child">
     <div class="impacto_informacion">
       <p style="color: #000; font-weight: bold; margin-bottom: 0;">GIVE BACK</p>
-      <h3>HOW IT WORKS</h3>
+      <h3><?php the_title(); ?></h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       <?php the_content(); ?>
       </p>
           <button class="btn_custom2">
-                <a href="#">CLICK HERE TO ADD YOUR CODE</a>
+                <a href="<?php the_field('opciones_de_donacion_url_del_boton'); ?> "><?php the_field('opciones_de_donacion_texto_del_boton'); ?> </a>
               </button>
     </div>
     <div class="impacto_child_img">
       <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
     </div>
   </div>
-
-    <div class="impacto_child">
-    <div class="impacto_informacion">
-      <h3>THE FEELING OF TREES</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-          <button class="btn_custom2">
-                <a href="#">DONATE NOW</a>
-              </button>
-    </div>
-    <div class="impacto_child_img">
-      <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
-    </div>
-  </div>
-
-  <div class="impacto_child">
-    <div class="impacto_child_img">
-      <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
-    </div>
-    <div class="impacto_informacion">
-      <h3>CHILDREN IN <br> CENTRAL AFRICA</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-          <button class="btn_custom2">
-                <a href="#">DONATE NOW</a>
-              </button>
-    </div>
-  </div>
-      <div class="impacto_child">
-    <div class="impacto_informacion">
-      <h3>EDUCATION FOR <br> THE CHILDREN OF<br> INDIA</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-          <button class="btn_custom2">
-                <a href="#">DONATE NOW</a>
-              </button>
-    </div>
-    <div class="impacto_child_img">
-      <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/banner2.png">
-    </div>
-  </div>
+ <?php endwhile; ?>
+  
 </section>
 
  <?php get_footer(); ?>

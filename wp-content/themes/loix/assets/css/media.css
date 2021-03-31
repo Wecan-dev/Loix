@@ -1,3 +1,99 @@
+.yith-wcwl-add-button {
+    text-align: right;
+}
+div#variation_pa_outfit {
+    display: none;
+}
+div#variation_pa_talla {
+    display: none;
+}
+div#variation_pa_style {
+    display: none;
+}
+div#pa_outfit_buttons {
+    margin-top: -12px;
+}
+div#pa_talla_buttons {
+    margin-top: -12px;
+}
+div#pa_style_buttons {
+    margin-top: -12px;
+}
+span.phoen_swatches.phoen_type_other {
+    width: 17rem !important;
+}
+span.phoen_swatches.phoen_type_normal {
+    width: 17rem !important;
+}
+.position_before.variation_button.selected{
+    border-radius: 30px;
+    background-color: #0f4388;
+}
+.valoracion-1, .valoracion-2, .valoracion-3{
+     display: flex;
+    height: 1.3rem;
+    overflow: hidden;
+    font-size: 1.1rem;
+    background-color: #e9ecef;
+    border-radius: 7.25rem;
+    justify-content: center;
+    width: 34rem;
+}
+.yith-wcwl-wishlistexistsbrowse a{
+    color: white;
+}
+.short-code_yith {
+    width: 56.3rem;
+    margin-top: -11px;
+}
+
+.yith-wcwl-add-to-wishlist .feedback .yith-wcwl-icon {
+    margin-right: 21px !important;
+    margin-top: 27px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+nav.woocommerce-pagination {
+    display: flex;
+    justify-content: center;
+}
+ul.page-numbers {
+    display: flex;
+}
+ul.products.columns-4 {
+    padding-bottom: 0px;
+}
+.features-item img{
+	width: 2rem;
+}
+.bapf_slidr_main.ui-widget-content .ui-slider-range, .berocket_filter_price_slider.ui-widget-content .ui-slider-range {
+    background: #0f448a !important;
+}
+span.ui-slider-handle.ui-state-default.ui-corner-all {
+  background: #ffffff;
+    border-radius: 50%;
+    outline: none;
+    border: 3px solid #0f448a;
+}
+a.hover_cat {
+    position: absolute;
+    margin-left: 2px;
+}
+.cart-number{
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    right: 6%;
+    font-size: .6rem;
+    font-family: sans-serif;
+    bottom: 48%;
+    font-weight: 600;
+    width: 1rem;
+    height: 1rem;
+    outline: none;
+    color: #ffffff;
+}
 .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input, .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input:hover, .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input:focus {
     background-color: transparent !important;
     color: white !important;
@@ -21,14 +117,47 @@
 
     width: 100%;
 }
+	 
+	 .shop-flex{
+		 display:block;
+	 }
+	 
+	 .cards-shop{
+		 width:100%;
+	 }
 .terminos h3:before{
     display: none;
 }
 .terminos h3:after{
     display: none;
 }
+	 
+	 #accordion-1 .arrow {
+left:auto;
+    right: 5px;
+		 }
+	 	 #accordion-2 .arrow {
+left:auto;
+    right: 5px;
+		 }
+	 	 #accordion-3 .arrow {
+left:auto;
+    right: 5px;
+		 }
+	 	 #accordion-4 .arrow {
+left:auto;
+    right: 5px;
+		 }
+	 	 #accordion-5 .arrow {
+left:auto;
+    right: 5px;
+		 }
 .nav2{
 	margin-bottom: 0;
+}
+	 .images-des {
+    display: grid;
+
 }
 
 .container.form-complete{

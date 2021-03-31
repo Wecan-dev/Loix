@@ -55,21 +55,20 @@
       <div class="text-act2">
         <div style="margin-left: 5%;" class="categ">
 
-             <?php if (get_theme_mod('slider_titulo') != NULL){?>  
-          <p>ENVIROMENT</p>
+             <?php if (get_theme_mod('Item Subtítulo primer campo') != NULL){?>  
+          <p><?php echo get_theme_mod('Item Subtítulo primer campo') ?></p>
 <?php }
          ?> 
-             <?php if (get_theme_mod('slider_titulo') != NULL){?>  
-          <h5>THE FEELING OF TREES</h5>
+             <?php if (get_theme_mod('givin_back_great_causes_item_titulo') != NULL){?>  
+          <h5><?php echo get_theme_mod('givin_back_great_causes_item_titulo') ?></h5>
 <?php }
          ?> 
 
         </div>
 
-           <?php if (get_theme_mod('slider_titulo') != NULL){?>  
+           <?php if (get_theme_mod('givin_back_great_causes_item_contenido') != NULL){?>  
         <div style="margin-left: 5%;" class="title-actv">
-          <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</h6>
+          <h6><?php echo get_theme_mod('givin_back_great_causes_item_contenido') ?></h6>
         </div>
 <?php }
          ?> 
@@ -79,21 +78,20 @@
       <div class="text-act2">
         <div style="margin-left: 5%;" class="categ">
 
-             <?php if (get_theme_mod('slider_titulo') != NULL){?>  
-          <p>HEALTH</p>
+             <?php if (get_theme_mod('givin_back_great_causes_item2_subtitulo') != NULL){?>  
+          <p><?php echo get_theme_mod('givin_back_great_causes_item2_subtitulo') ?></p>
 <?php }
          ?> 
-             <?php if (get_theme_mod('slider_titulo') != NULL){?>  
-          <h5>CHILDREN IN <br> CENTRAL AFRICA</h5>
+             <?php if (get_theme_mod('givin_back_great_causes_item2_titulo') != NULL){?>  
+          <h5><?php echo get_theme_mod('givin_back_great_causes_item2_titulo') ?></h5>
 <?php }
          ?> 
 
         </div>
 
-           <?php if (get_theme_mod('slider_titulo') != NULL){?>  
+           <?php if (get_theme_mod('givin_back_great_causes_item2_contenido') != NULL){?>  
         <div style="margin-left: 5%;" class="title-actv">
-          <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</h6>
+          <h6><?php echo get_theme_mod('givin_back_great_causes_item2_contenido') ?></h6>
         </div>
 <?php }
          ?> 
@@ -102,21 +100,20 @@
     <div class="icon-valores icon-act">
       <div class="text-act2">
         <div style="margin-left: 5%;" class="categ">
-             <?php if (get_theme_mod('slider_titulo') != NULL){?>  
-          <p>EDUCATION</p>
+             <?php if (get_theme_mod('givin_back_great_causes_item3_subtitulo') != NULL){?>  
+          <p><?php echo get_theme_mod('givin_back_great_causes_item3_subtitulo') ?></p>
 <?php }
          ?> 
-             <?php if (get_theme_mod('slider_titulo') != NULL){?>  
-          <h5>EDUCATION FOR THE <br> CHILDREN OF INDIA</h5>
+             <?php if (get_theme_mod('givin_back_great_causes_item3_titulo') != NULL){?>  
+          <h5><?php echo get_theme_mod('givin_back_great_causes_item3_titulo') ?></h5>
 
 <?php }
          ?> 
         </div>
 
-           <?php if (get_theme_mod('slider_titulo') != NULL){?>  
+           <?php if (get_theme_mod('givin_back_great_causes_item3_contenido') != NULL){?>  
         <div style="margin-left: 5%;" class="title-actv">
-          <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</h6>
+          <h6><?php echo get_theme_mod('givin_back_great_causes_item3_contenido') ?></h6>
         </div>
 <?php }
          ?> 

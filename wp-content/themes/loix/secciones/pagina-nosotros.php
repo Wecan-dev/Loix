@@ -6,9 +6,9 @@
   //image
   $wp_customize->add_setting('nosotros_banner_img');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_banner_img', array (
+  $wp_customize->add_control(new WP_Customize_Upload_Control($wp_customize, 'nosotros_banner_img', array (
     'label' => 'Banner',
-    'description' => 'Imagen',
+    'description' => 'Imagen o Video',
     'section' => 'nosotros_banner',
     'settings' => 'nosotros_banner_img'
   )));

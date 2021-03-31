@@ -15,39 +15,56 @@
   <div id="contacto" class="contact info-centro ">
     <div class="form">
         <h5>DEJANOS UN MENSAJE</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p></p>
        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
+		</div>
     <div class="information">
       <h5>NUESTRA INFORMACIÓN</h5>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
+ <?php if (get_theme_mod('slogan') != NULL){?>  
+          <p><?php echo get_theme_mod('slogan') ?></p>
+            <?php } ?> 
+      
 
       <div class="block-237 ul-mar ">
         <ul>
-          <li>
-         <img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg">
-            <div>
-              <span style="color: #000; font-size: 16px; font-weight: 600;">Email</span> <br><span style="color: #000; font-size: 15px;">info@jakielondon.com</span>
-              </div>
-            </li>
-              <li >
+			
+			 <?php if (get_theme_mod('footer_email') != NULL){?>  
+			
+			  <li>
+				 <img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg">
+				  <a href="mailto:<?php echo get_theme_mod('footer_email') ?>">
+					<div>
+					  <span style="color: #000; font-size: 16px; font-weight: 600;">Email</span> <br><span style="color: #000; font-size: 15px;"><?php echo get_theme_mod('footer_email') ?></span>
+					  </div>
+					  </a>
+					</li>
+               <?php }  ?> 
+			
+			 
+           <?php if (get_theme_mod('footer_telefono') != NULL){?>  
+			
+			  <li >
                <img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-call.svg">
-                <div>
-                <span style="color: #000; font-size: 16px; font-weight: 600;"> Phone</span> <br>
-                <span style="color: #000; font-size: 15px;">57 (4) 444 35 69</span>
+				  <a href='tel: <?php echo get_theme_mod('footer_telefono') ?>'>
+					<div>
+					<span style="color: #000; font-size: 16px; font-weight: 600;"> Teléfono</span> <br>
+					<span style="color: #000; font-size: 15px;"> <?php echo get_theme_mod('footer_telefono') ?></span>
+				  </div>
+				  </a>
+              </li> 
+			
+     
+  <?php }  ?> 
+			
+        
+            
+		  </ul>
               </div>
-              </li>
-              </div>
-            </ul>
+           
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
+
 
  <?php get_footer(); ?>

@@ -3,7 +3,7 @@
 
 <div class="main-banner">
   <div class="main-banner__content">
-
+ <?php if (get_theme_mod('women_banner_slider_item_1') != NULL){?>  
     <div class="main-banner__item">
       <div class="mask">
         <div class="main-banner__text">
@@ -32,20 +32,32 @@
 
       </div>
     </div>
-    <?php if (get_theme_mod('women_banner_slider_item_1') != NULL){?>  
-    <div class="main-banner__img">
-      <img src="<?php echo get_theme_mod('women_banner_slider_item_1') ?>">
+		 <?php  $extension = pathinfo(get_theme_mod('women_banner_slider_item_1'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner_slider_item_1') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner_slider_item_1') ?>" type="video/mp4">
+                    </video>  
+		     <?php } ?>
+   
 
-    </div>
- <?php }
-         ?> 
     <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/index.php/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+		<div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
       </a>
     </div>
   </div>
+	   <?php }
+         ?> 
+	   <?php if (get_theme_mod('women_banner_slider_item_2') != NULL){?>  
  <div class="main-banner__item">
       <div class="mask">
         <div class="main-banner__text">
@@ -75,25 +87,147 @@
 
       </div>
     </div>
-    <?php if (get_theme_mod('women_banner_slider_item_2') != NULL){?>  
-    <div class="main-banner__img">
-      <img src="<?php echo get_theme_mod('women_banner_slider_item_2') ?>">
-
-    </div>
- <?php }
-         ?> 
-    <div class="link-page">
+	 		 <?php  $extension = pathinfo(get_theme_mod('women_banner_slider_item_2'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner_slider_item_2') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner_slider_item_2') ?>" type="video/mp4">
+                    </video>  
+		     <?php } ?>
+   
+ 
+      <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/index.php/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+		<div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
       </a>
     </div>
   </div>
+	   <?php }
+         ?> 
+	   <?php if (get_theme_mod('women_banner_slider_item_3') != NULL){?>  
+ <div class="main-banner__item">
+      <div class="mask">
+        <div class="main-banner__text">
+           <?php if (get_theme_mod('women_banner_slider_titulo_3') != NULL){?>  
+          <div class="main-banner__title">
+            <p><?php echo get_theme_mod('women_banner_slider_titulo_3') ?></p>
+          </div>
+           <?php }
+         ?> 
+          <?php if (get_theme_mod('women_banner_slider_subtitulo_3') != NULL){?>  
+          <div class="main-banner__description">
+            <p><?php echo get_theme_mod('women_banner_slider_subtitulo_3') ?>
+            </p>
+          </div>
+           <?php }
+         ?> 
+
+           <?php if (get_theme_mod('women_banner_slider_texto_del_boton_3') != NULL){?>  
+          <div class="btn_custom">
+           <a href="<?php echo get_theme_mod('women_banner_slider_url_del_boton_3') ?>"><?php echo get_theme_mod('women_banner_slider_texto_del_boton_3') ?></a>
+         </div>
+          <?php }
+         ?> 
+         <div id="section01" class="demo">
+          <a href="#section03"><span></span></a>
+        </div>
+
+      </div>
+    </div>
+       <?php  $extension = pathinfo(get_theme_mod('women_banner_slider_item_3'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner_slider_item_3') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner_slider_item_3') ?>" type="video/mp4">
+                    </video>  
+         <?php } ?>
+   
+ 
+      <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+    <div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+     <?php }
+         ?> 
+	   <?php if (get_theme_mod('women_banner_slider_item_4') != NULL){?>  
+ <div class="main-banner__item">
+      <div class="mask">
+        <div class="main-banner__text">
+           <?php if (get_theme_mod('women_banner_slider_titulo_4') != NULL){?>  
+          <div class="main-banner__title">
+            <p><?php echo get_theme_mod('women_banner_slider_titulo_4') ?></p>
+          </div>
+           <?php }
+         ?> 
+          <?php if (get_theme_mod('women_banner_slider_subtitulo_4') != NULL){?>  
+          <div class="main-banner__description">
+            <p><?php echo get_theme_mod('women_banner_slider_subtitulo_4') ?>
+            </p>
+          </div>
+           <?php }
+         ?> 
+
+           <?php if (get_theme_mod('women_banner_slider_texto_del_boton_4') != NULL){?>  
+          <div class="btn_custom">
+           <a href="<?php echo get_theme_mod('women_banner_slider_url_del_boton_4') ?>"><?php echo get_theme_mod('women_banner_slider_texto_del_boton_4') ?></a>
+         </div>
+          <?php }
+         ?> 
+         <div id="section01" class="demo">
+          <a href="#section03"><span></span></a>
+        </div>
+
+      </div>
+    </div>
+       <?php  $extension = pathinfo(get_theme_mod('women_banner_slider_item_4'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner_slider_item_4') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner_slider_item_4') ?>" type="video/mp4">
+                    </video>  
+         <?php } ?>
+   
+ 
+      <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+    <div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+     <?php }
+         ?> 
+ 
 </div>
 
 <div id="section02" class="main-banner">
   <div class="main-banner__content">
-
+  <?php if (get_theme_mod('women_banner2_slider_item_1') != NULL){?>  
         <div class="main-banner__item">
       <div class="mask">
         <div class="main-banner__text">
@@ -122,20 +256,32 @@
 
       </div>
     </div>
-    <?php if (get_theme_mod('women_banner2_slider_item_1') != NULL){?>  
-    <div class="main-banner__img">
-      <img src="<?php echo get_theme_mod('women_banner2_slider_item_1') ?>">
+   <?php  $extension = pathinfo(get_theme_mod('women_banner2_slider_item_1'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner2_slider_item_1') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner2_slider_item_1') ?>" type="video/mp4">
+                    </video>  
+		     <?php } ?>
+   
 
+      <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
     </div>
- <?php }
-         ?> 
-    <div class="link-page">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
-      <a href="#" class="link-page_item">
-       <p>WOMAN</p>
+		<div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
       </a>
     </div>
   </div>
+	   <?php }
+         ?> 
+	    <?php if (get_theme_mod('women_banner2_slider_item_2') != NULL){?>  
   <div class="main-banner__item">
       <div class="mask">
         <div class="main-banner__text">
@@ -164,25 +310,143 @@
 
       </div>
     </div>
-    <?php if (get_theme_mod('women_banner2_slider_item_2') != NULL){?>  
-    <div class="main-banner__img">
-      <img src="<?php echo get_theme_mod('women_banner2_slider_item_2') ?>">
-
-    </div>
- <?php }
-         ?> 
-    <div class="link-page">
-      <a href="#" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
-       <p>WOMAN</p>
+   <?php  $extension = pathinfo(get_theme_mod('women_banner2_slider_item_2'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner2_slider_item_2') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner2_slider_item_2') ?>" type="video/mp4">
+                    </video>  
+		     <?php } ?>
+    
+       <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
       </a>
     </div>
-</div>
+		<div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+	   <?php }
+         ?> 
+	  <?php if (get_theme_mod('women_banner2_slider_item_3') != NULL){?>  
+  <div class="main-banner__item">
+      <div class="mask">
+        <div class="main-banner__text">
+           <?php if (get_theme_mod('women_banner2_slider_titulo_3') != NULL){?>  
+          <div class="main-banner__title">
+            <p><?php echo get_theme_mod('women_banner2_slider_titulo_3') ?></p>
+          </div>
+           <?php }
+         ?> 
+          <?php if (get_theme_mod('women_banner2_slider_subtitulo_3') != NULL){?>  
+          <div class="main-banner__description">
+            <p><?php echo get_theme_mod('women_banner2_slider_subtitulo_3') ?>
+            </p>
+          </div>
+           <?php }
+         ?> 
+           <?php if (get_theme_mod('women_banner2_slider_texto_del_boton_3') != NULL){?>  
+          <div class="btn_custom">
+           <a href="<?php echo get_theme_mod('women_banner2_slider_url_del_boton_3') ?>"><?php echo get_theme_mod('women_banner2_slider_texto_del_boton_3') ?></a>
+         </div>
+          <?php }
+         ?> 
+         <div id="section01" class="demo">
+          <a href="#section03"><span></span></a>
+        </div>
+
+      </div>
+    </div>
+   <?php  $extension = pathinfo(get_theme_mod('women_banner2_slider_item_3'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner2_slider_item_3') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner2_slider_item_3') ?>" type="video/mp4">
+                    </video>  
+         <?php } ?>
+    
+       <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+    <div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+     <?php }
+         ?> 
+
+         <?php if (get_theme_mod('women_banner2_slider_item_4') != NULL){?>  
+  <div class="main-banner__item">
+      <div class="mask">
+        <div class="main-banner__text">
+           <?php if (get_theme_mod('women_banner2_slider_titulo_4') != NULL){?>  
+          <div class="main-banner__title">
+            <p><?php echo get_theme_mod('women_banner2_slider_titulo_4') ?></p>
+          </div>
+           <?php }
+         ?> 
+          <?php if (get_theme_mod('women_banner2_slider_subtitulo_4') != NULL){?>  
+          <div class="main-banner__description">
+            <p><?php echo get_theme_mod('women_banner2_slider_subtitulo_4') ?>
+            </p>
+          </div>
+           <?php }
+         ?> 
+           <?php if (get_theme_mod('women_banner2_slider_texto_del_boton_4') != NULL){?>  
+          <div class="btn_custom">
+           <a href="<?php echo get_theme_mod('women_banner2_slider_url_del_boton_4') ?>"><?php echo get_theme_mod('women_banner2_slider_texto_del_boton_4') ?></a>
+         </div>
+          <?php }
+         ?> 
+         <div id="section01" class="demo">
+          <a href="#section03"><span></span></a>
+        </div>
+
+      </div>
+    </div>
+   <?php  $extension = pathinfo(get_theme_mod('women_banner2_slider_item_4'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner2_slider_item_4') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner2_slider_item_4') ?>" type="video/mp4">
+                    </video>  
+         <?php } ?>
+    
+       <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+    <div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+     <?php }
+         ?> 
 </div>
 </div>
 
 <div id="section03" class="main-banner">
   <div class="main-banner__content">
+	    <?php if (get_theme_mod('women_banner3_slider_item_1') != NULL){?>  
    <div class="main-banner__item">
       <div class="mask">
         <div class="main-banner__text">
@@ -211,20 +475,31 @@
 
       </div>
     </div>
-    <?php if (get_theme_mod('women_banner3_slider_item_1') != NULL){?>  
-    <div class="main-banner__img">
-      <img src="<?php echo get_theme_mod('women_banner3_slider_item_1') ?>">
-
+	    <?php  $extension = pathinfo(get_theme_mod('women_banner3_slider_item_1'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner3_slider_item_1') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner3_slider_item_1') ?>" type="video/mp4">
+                    </video>  
+		     <?php } ?>
+  
+             <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
     </div>
- <?php }
-         ?> 
-          <div class="link-page">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
-      <a href="#" class="link-page_item">
-       <p>WOMAN</p>
+		<div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
       </a>
     </div>
   </div>
+	   <?php }
+         ?> 
+	    <?php if (get_theme_mod('women_banner3_slider_item_2') != NULL){?>  
   <div class="main-banner__item">
       <div class="mask">
         <div class="main-banner__text">
@@ -253,20 +528,139 @@
 
       </div>
     </div>
-    <?php if (get_theme_mod('women_banner3_slider_item_2') != NULL){?>  
-    <div class="main-banner__img">
-      <img src="<?php echo get_theme_mod('women_banner3_slider_item_2') ?>">
+  	    <?php  $extension = pathinfo(get_theme_mod('women_banner3_slider_item_2'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner3_slider_item_2') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner3_slider_item_2') ?>" type="video/mp4">
+                    </video>  
+		     <?php } ?>
+   
 
-    </div>
- <?php }
-         ?> 
-      <div class="link-page">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
-      <a href="#" class="link-page_item">
-       <p>WOMAN</p>
+         <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
       </a>
     </div>
-</div>
+		<div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+	   <?php }
+         ?> 
+	  <?php if (get_theme_mod('women_banner3_slider_item_3') != NULL){?>  
+  <div class="main-banner__item">
+      <div class="mask">
+        <div class="main-banner__text">
+           <?php if (get_theme_mod('women_banner3_slider_titulo_3') != NULL){?>  
+          <div class="main-banner__title">
+            <p><?php echo get_theme_mod('women_banner3_slider_titulo_3') ?></p>
+          </div>
+           <?php }
+         ?> 
+          <?php if (get_theme_mod('women_banner3_slider_subtitulo_3') != NULL){?>  
+          <div class="main-banner__description">
+            <p><?php echo get_theme_mod('women_banner3_slider_subtitulo_3') ?>
+            </p>
+          </div>
+           <?php }
+         ?> 
+           <?php if (get_theme_mod('women_banner3_slider_texto_del_boton_3') != NULL){?>  
+          <div class="btn_custom">
+           <a href="<?php echo get_theme_mod('women_banner3_slider_url_del_boton_3') ?>"><?php echo get_theme_mod('women_banner3_slider_texto_del_boton_3') ?></a>
+         </div>
+          <?php }
+         ?> 
+         <div id="section01" class="demo">
+          <a href="#section03"><span></span></a>
+        </div>
+
+      </div>
+    </div>
+        <?php  $extension = pathinfo(get_theme_mod('women_banner3_slider_item_3'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner3_slider_item_3') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner3_slider_item_3') ?>" type="video/mp4">
+                    </video>  
+         <?php } ?>
+   
+
+         <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+    <div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+     <?php }
+         ?> 
+              <?php if (get_theme_mod('women_banner3_slider_item_4') != NULL){?>  
+  <div class="main-banner__item">
+      <div class="mask">
+        <div class="main-banner__text">
+           <?php if (get_theme_mod('women_banner3_slider_titulo_4') != NULL){?>  
+          <div class="main-banner__title">
+            <p><?php echo get_theme_mod('women_banner3_slider_titulo_4') ?></p>
+          </div>
+           <?php }
+         ?> 
+          <?php if (get_theme_mod('women_banner3_slider_subtitulo_4') != NULL){?>  
+          <div class="main-banner__description">
+            <p><?php echo get_theme_mod('women_banner3_slider_subtitulo_4') ?>
+            </p>
+          </div>
+           <?php }
+         ?> 
+           <?php if (get_theme_mod('women_banner3_slider_texto_del_boton_4') != NULL){?>  
+          <div class="btn_custom">
+           <a href="<?php echo get_theme_mod('women_banner3_slider_url_del_boton_4') ?>"><?php echo get_theme_mod('women_banner3_slider_texto_del_boton_4') ?></a>
+         </div>
+          <?php }
+         ?> 
+         <div id="section01" class="demo">
+          <a href="#section03"><span></span></a>
+        </div>
+
+      </div>
+    </div>
+        <?php  $extension = pathinfo(get_theme_mod('women_banner3_slider_item_4'))['extension']; ?>
+             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
+                   <img class="main-banner__img" src="<?php echo get_theme_mod('women_banner3_slider_item_4') ?>">
+              <?php } else { ?> 
+                    <video class="main-banner__img" id="mivideo" autoplay preload loop muted>
+                        <source src="<?php echo get_theme_mod('women_banner3_slider_item_4') ?>" type="video/mp4">
+                    </video>  
+         <?php } ?>
+   
+
+         <div class="link-page">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
+      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
+       <p>SMART</p>
+      </a>
+    </div>
+    <div class="link-page2">
+      <a href="<?php echo bloginfo('url').'/';?>" class="link-page_item">
+       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
+       <p>MEN</p>
+      </a>
+    </div>
+  </div>
+     <?php }
+         ?> 
 </div>
 </div>
 
@@ -362,7 +756,21 @@
 
     <div id="BESTSELLERS" class="">
       <div class="multiple-items">
-         <?php $args = array( 'post_type' => 'product'); ?>
+         <?php $args = 
+    array(
+      'post_type' => 'product',
+      //'paged' => $paged,
+      //'posts_per_page' =>12,
+      'meta_key' => 'total_sales',
+      'orderby' => 'meta_value_num',   
+      'meta_query' => array(
+        array(
+            'key' => 'total_sales',
+            'value' => 0,
+            'compare' => '>'
+        )
+      ),
+    ); ?>
               <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
         <div class="block4 card-product">
@@ -394,7 +802,6 @@
       </div>
     </div>
   </div>
-
   <div id="section07" class="demo">
     <a href="#section05"><span></span></a>
   </div>

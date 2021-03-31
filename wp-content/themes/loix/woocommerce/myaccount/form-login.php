@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Login Form
@@ -32,7 +31,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
     <div class="register_form container">
 
       <div class="title_register">
-        <i class="fa fa-user" style="   color: #0f4388; margin-bottom: 5%;" aria-hidden="true"></i>
+        <i class="fa fa-user-circle-o" style="   color: #0f4388; margin-bottom: 5%;" aria-hidden="true"></i>
 
         <p> Crea una cuenta para agailizar las futuras compras, hacer un seguimineto del <br> historial de pedidos y recibir correos electrónicos, descuentos, ofertas <br> especiales</p>
       </div>
@@ -87,7 +86,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
     <div class="register_form container">
 
       <div class="title_register">
-        <i class="fa fa-user" style="   color: #0f4388; margin-bottom: 5%;" aria-hidden="true"></i>
+        <i class="fa fa-user-circle-o" style="   color: #0f4388; margin-bottom: 5%;" aria-hidden="true"></i>
 <h4>  REGISTRO</h4>
 
 <form method="post" class="woocommerce-form woocommerce-form-register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >

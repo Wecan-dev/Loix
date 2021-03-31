@@ -2,31 +2,27 @@
 
  <div class="blog-page" style="background-color: #fff!important; ">
 
-  <div class="header "  style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/donacion.png);">
+  <div class="header "  style="background-image: url(<?php echo get_theme_mod('donacion_interna_imagen') ?>);">
     <div class="mask-blog">
-      <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;">TU DONACIÓN</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
-      tempor incididunt ut labore</p>
+      <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;"><?php echo get_theme_mod('donacion_interna_titulo') ?></h3>
+      <p><?php echo get_theme_mod('donacion_interna_subtitulo') ?></p>
          <div id="section01" class="demo">
           <a href="#donacion"><span></span></a>
         </div>
     </div>
   </div>
 <section id="donacion">
+	   <?php $args = array( 'post_type' => 'donacion_interna', 'posts_per_page' => 1 ); ?>
+            <?php $loop = new WP_Query( $args ); ?>
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <div class="info-donacion">
   <p style="font-weight: bold;">HA SELECCIONADO</p>
-  <h3>EDUCACIÓN A LOS NIÑOS DE LA INDIA </h3>
+  <h3><?php the_title(); ?></h3>
 <div class="text-selec container">
-  <p>Menos de la mitad de los niños de la India de entre 6 y 14 años van a la escuela. Como resultado, la India alberga el mayor número de <br> analfabetos del mundo.</p>
-
-  <p style="font-style: italic">Nuestra misión es mejorar la calidad de la educación en la India y garantizar que todos los niños de<br> la India no solo asistan sino que también prosperen en la escuela.<br>
-- Pratham Reino Unido</p>
-
-<p>Pratham UK no dejará que India se quede atrás. Al centrarse en las cuatro áreas principales de alfabetización, educación de las niñas, formación profesional e investigación y promoción, la organización ha diseñado un sistema inclusivo de gran alcance que se esfuerza por brindar educación a la mayor cantidad posible de ciudadanos indios.<br><br>
-
-Si desea apoyar esta causa, complete sus datos en el formulario a continuación</p>
+ <?php the_content(); ?>
 </div>  
 </div>
+	  <?php endwhile; ?>
 <div class="form-complete container">
   <p style="font-weight: bold; font-size: 18px; margin-bottom: 5%;">Completa este formulario</p>
       <div class="form2 ">
