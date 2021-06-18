@@ -15,7 +15,7 @@
   <div id="contacto" class="contact info-centro ">
     <div class="form">
         <h5>DEJANOS UN MENSAJE</h5>
-        <p></p>
+        <p class="contact-text" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 2, 'title' => false, 'description' => false ) ); ?>
 		</div>
     <div class="information">
@@ -25,16 +25,15 @@
             <?php } ?> 
       
 
-      <div class="block-237 ul-mar ">
-        <ul>
+        <ul class="contact-list">
 			
 			 <?php if (get_theme_mod('footer_email') != NULL){?>  
 			
 			  <li>
-				 <img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg">
+				 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/envelope.svg">
 				  <a href="mailto:<?php echo get_theme_mod('footer_email') ?>">
 					<div>
-					  <span style="color: #000; font-size: 16px; font-weight: 600;">Email</span> <br><span style="color: #000; font-size: 15px;"><?php echo get_theme_mod('footer_email') ?></span>
+					  <span>Email</span> <br><span><?php echo get_theme_mod('footer_email') ?></span>
 					  </div>
 					  </a>
 					</li>
@@ -44,11 +43,11 @@
            <?php if (get_theme_mod('footer_telefono') != NULL){?>  
 			
 			  <li >
-               <img style="margin-right: 8px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-call.svg">
-				  <a href='tel: <?php echo get_theme_mod('footer_telefono') ?>'>
+               <img  src="<?php echo get_template_directory_uri(); ?>/assets/images/phone-call.svg">
+				  <a href='tel:<?php echo get_theme_mod('footer_telefono') ?>'>
 					<div>
-					<span style="color: #000; font-size: 16px; font-weight: 600;"> Teléfono</span> <br>
-					<span style="color: #000; font-size: 15px;"> <?php echo get_theme_mod('footer_telefono') ?></span>
+					<span> Teléfono</span> <br>
+					<span> <?php echo get_theme_mod('footer_telefono') ?></span>
 				  </div>
 				  </a>
               </li> 
@@ -59,7 +58,6 @@
         
             
 		  </ul>
-              </div>
            
           </div>
         </div>

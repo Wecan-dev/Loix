@@ -31,7 +31,7 @@
     </div>
   </div>
 
-<div id="collections" class="main-banner">
+<div id="collections" class="main-banner smart-page">
    <?php $args = array( 'post_type' => 'smart' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -47,9 +47,9 @@
             <p> <?php the_content(); ?>
             </p>
           </div>
-          <div class="btn_custom" >
-           <a href="<?php the_field('smart_boton_url'); ?> "><?php the_field('smart_boton_texto'); ?> </a>
-         </div>
+          <a class="btn_custom"
+           a href="<?php the_field('smart_boton_url'); ?> "><?php the_field('smart_boton_texto'); ?> </a>
+         
       </div>
     </div>
     <div class="main-banner__img2">

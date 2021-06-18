@@ -161,14 +161,15 @@ add_image_size('pop-thumb',542, 340, true );
 add_theme_support('woocommerce');
 add_theme_support( 'wc-product-gallery-lightbox' );
 /*********** Woocommerce **********************/
-function my_theme_setup() {
-  add_theme_support( 'woocommerce' );
-}
-add_action( 'after_setup_theme', 'my_theme_setup' );
+
+//Compatibilidad con galerías a partir de WooCommerce 3.0>
 add_action( 'after_setup_theme', 'yourtheme_setup' );
+
 function yourtheme_setup() {
+
+
 add_theme_support( 'wc-product-gallery-slider' );
-} 
+}
 
 
 // Register Custom Post Type

@@ -25,50 +25,23 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 <li <?php wc_product_class( '', $product ); ?>>
-	<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_open - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item' );
- ?>
+
 	 
-	    <div class="block4 card-product card-product2">
-		  <div class="">
+	    <div class=" card-product card-product2">
+		  <div class="card-product2__img">
         	<img src="<?php echo get_the_post_thumbnail_url(); ?>">
 			     </div>
-          <div class="text-product">
-            <h5><?php the_title(); ?></h5>
-			  <p>
-				  <?php echo excerpt(25); ?>
+          <div class="card-product2__text">
+            <a href="<?php the_permalink(); ?>" class="product-title" ><?php the_title(); ?></a>
+			  <p class="product-description" >
+				  <?php echo excerpt(50); ?>
 			  </p>
-            <p><?php echo $product->get_price_html(); ?></p>
+            <p class="product-price" ><?php echo $product->get_price_html(); ?></p>
               <div class="colors">
           <?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
         <div class="black" style="background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
           <?php }?>
   </div>
-          </div>
-          <div class="icon-heart">          
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </div>  
-                    <div class="discount">          
-                    <div class="discount-p">
-                    <p>20%</p>
-                    </div>
-          </div>  
-          <div class="block2-overlay trans-0-4">
-			  <div class="short-code_yith">
-				    <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
-
-			  </div>
-            
-            <div class="block2-btn-addcart trans-0-4">
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
-            </div>
           </div>
         </div>
   

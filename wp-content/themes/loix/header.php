@@ -5,12 +5,16 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/LOIX-01.png">
+	<title>Relojes LOIX para Hombre y Mujer |Sitio Oficial Colombia | Smartwatch</title>
+	<meta name="description" content="Sitio oficial de Loix en Colombia. Relojes de la más alta calidad, resistentes al agua y con movimiento Japonés. Envíos a nivel nacional. Distribuidor oficial"/>
+  <meta name="keywords" content="Resistente al agua, SmartWatch, Reloj inteligente, Reloj Hombre, Reloj Mujer, Japonés, Colombia, Venta"/>
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/LOIX-01.png">
   <!-- awesone fonts css-->
+	
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.css" rel="stylesheet" type="text/css">
   <!-- owl carousel css-->
-	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css">
@@ -25,15 +29,61 @@
 </head>
 <body>
 <div class="main-content__global">
-  <header class="header__main navbar-me back container-fluid">
+  <header class="header__main navbar-me  container-fluid">
 
     <div class="menu_principal">
 
       <button class="responsive-menu-btn">
-        <svg class="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125">
-          <path d="M14.000002 15.99999c-3.3137 0-6 2.68619-6 6 0 3.31359 2.6863 6 6 6h71.999996c3.3137 0 6-2.68641 6-6 0-3.31381-2.6863-6-6-6zm0 28.00003c-3.3137 0-6 2.6862-6 6 0 3.3136 2.6863 6 6 6h71.999996c3.3137 0 6-2.6864 6-6 0-3.3138-2.6863-6-6-6zm0 28c-3.3137 0-6 2.6862-6 6 0 3.3136 2.6863 6 6 6h71.999996c3.3137 0 6-2.6864 6-6 0-3.3138-2.6863-6-6-6z"
-          style="text-indent:0;text-transform:none;block-progression:tb" overflow="visible" color="#000" />
-        </svg>
+		  <svg class="open" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+			C512,404.954,503.046,396,492,396z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+      
 
         <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20">
           <path d="M14.7 1.3c-.4-.4-1-.4-1.4 0L8 6.6 2.7 1.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4L6.6 8l-5.3 5.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3L8 9.4l5.3 5.3c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4L9.4 8l5.3-5.3c.4-.4.4-1 0-1.4z"
@@ -137,12 +187,12 @@
   </div>
  -->
 
-<div class="form-search d-block d-sm-none">
+<div class="form-search form_search d-block d-sm-none">
 <?php echo do_shortcode('[wcas-search-form]'); ?>
 
 </div>
 
-<div class="login ">
+<div class="login-link ">
   <a class=" d-block d-sm-none ">Iniciar Sesión</a>
   <a class=" d-block d-sm-none ">Ayuda</a>
 
@@ -157,11 +207,11 @@
 </div>   
 </div>
 
-<div class="d-none d-sm-block">
+<div class="form_search d-none d-sm-block">
  <?php echo do_shortcode('[wcas-search-form]'); ?>
 </div>
 
-<div class="login  ">
+<div class="login-link  ">
   <a class=" d-none d-sm-block " href="<?php bloginfo('url') ?>/mi-cuenta" >Iniciar Sesión</a>
   <a href="<?php bloginfo('url') ?>/faqs2" class=" d-none d-sm-block ">Ayuda</a>
   <button type="button"  data-toggle="modal" data-target="#cartModal" href="<?php echo $url_carro; ?>" class="nav-link"  style="padding:0;"><span class="fa fa-shopping-bag"></span>

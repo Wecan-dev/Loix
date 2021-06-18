@@ -6,9 +6,13 @@
              <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
                    <div class="header "  style="background-image: url(<?php echo get_theme_mod('nosotros_banner_img') ?>);">
               <?php } else { ?> 
-                    <video class="header header-video__about" id="mivideo" autoplay preload loop muted>
+					   <div class="header " >
+						   
+					
+                    <video class="header-video__about"  id="mivideo" autoplay preload loop muted>
                         <source src="<?php echo get_theme_mod('nosotros_banner_img') ?>" type="video/mp4">
                     </video>  
+						      </div>
 		     <?php } ?>
 
 
@@ -29,7 +33,10 @@
   </div>
 	  <?php }
          ?> 
-<section id="about" class="container impacto">
+<section id="about" class="impacto about">
+	<div class="padding-right-left" >
+		
+
   <div class="impacto_child">
     <div class="impacto_informacion">
       <?php if (get_theme_mod('nosotros_historia') != NULL){?> 
@@ -50,10 +57,12 @@
     <?php }
          ?> 
   </div>
+			</div>
 </section>
 
 <section>
 <div class="valores">
+		<div class="padding-right-left" >
    <?php if (get_theme_mod('nosotros_iniciativa_titulo_principal') != NULL){?>
 <h3><?php echo get_theme_mod('nosotros_iniciativa_titulo_principal') ?></h3>
  <?php }
@@ -68,13 +77,14 @@
          ?> 
       <div class="text-act">
       <?php if (get_theme_mod('nosotros_iniciativa_titulo') != NULL){?>
-        <div style="margin-left: 5%;" class="categ">
+        <div 
+			  class="categ">
           <p><?php echo get_theme_mod('nosotros_iniciativa_titulo') ?></p>
         </div>
  <?php }
          ?> 
          <?php if (get_theme_mod('nosotros_iniciativa_contenido') != NULL){?>
-        <div style="margin-left: 5%;" class="title-act">
+        <div class="title-act">
           <h6><?php echo get_theme_mod('nosotros_iniciativa_contenido') ?></h6>
         </div>
          <?php }
@@ -95,13 +105,13 @@
          ?> 
       <div class="text-act">
       <?php if (get_theme_mod('nosotros_iniciativa_titulo_2') != NULL){?>
-        <div style="margin-left: 5%;" class="categ">
+        <div  class="categ">
           <p><?php echo get_theme_mod('nosotros_iniciativa_titulo_2') ?></p>
         </div>
  <?php }
          ?> 
          <?php if (get_theme_mod('nosotros_iniciativa_contenido_2') != NULL){?>
-        <div style="margin-left: 5%;" class="title-act">
+        <div class="title-act">
           <h6><?php echo get_theme_mod('nosotros_iniciativa_contenido_2') ?></h6>
         </div>
          <?php }
@@ -119,13 +129,13 @@
          ?> 
       <div class="text-act">
       <?php if (get_theme_mod('nosotros_iniciativa_titulo_3') != NULL){?>
-        <div style="margin-left: 5%;" class="categ">
+        <div  class="categ">
           <p><?php echo get_theme_mod('nosotros_iniciativa_titulo_3') ?></p>
         </div>
  <?php }
          ?> 
          <?php if (get_theme_mod('nosotros_iniciativa_contenido_3') != NULL){?>
-        <div style="margin-left: 5%;" class="title-act">
+        <div class="title-act">
           <h6><?php echo get_theme_mod('nosotros_iniciativa_contenido_3') ?></h6>
         </div>
          <?php }
@@ -142,26 +152,81 @@
          ?> 
       <div class="text-act">
       <?php if (get_theme_mod('nosotros_iniciativa_titulo_4') != NULL){?>
-        <div style="margin-left: 5%;" class="categ">
+        <div  class="categ">
           <p><?php echo get_theme_mod('nosotros_iniciativa_titulo_4') ?></p>
         </div>
  <?php }
          ?> 
          <?php if (get_theme_mod('nosotros_iniciativa_contenido_4') != NULL){?>
-        <div style="margin-left: 5%;" class="title-act">
+        <div  class="title-act">
           <h6><?php echo get_theme_mod('nosotros_iniciativa_contenido_4') ?></h6>
         </div>
          <?php }
          ?> 
       </div>
     </div>
+	  
+	        <div class="icon-valores icon-act wow fadeInUp" data-wow-duration="2s">
+       <?php if (get_theme_mod('nosotros_iniciativa_img_5') != NULL){?>
+      <div class="act-img">
+        <img src="<?php echo get_theme_mod('nosotros_iniciativa_img_5') ?>">
+      </div>
+ <?php }
+         ?> 
+      <div class="text-act">
+      <?php if (get_theme_mod('nosotros_iniciativa_titulo_5') != NULL){?>
+        <div  class="categ">
+          <p><?php echo get_theme_mod('nosotros_iniciativa_titulo_5') ?></p>
+        </div>
+ <?php }
+         ?> 
+         <?php if (get_theme_mod('nosotros_iniciativa_contenido_5') != NULL){?>
+        <div  class="title-act">
+          <h6><?php echo get_theme_mod('nosotros_iniciativa_contenido_5') ?></h6>
+        </div>
+         <?php }
+         ?> 
+      </div>
+    </div>
+	  
+	        <div class="icon-valores icon-act wow fadeInUp" data-wow-duration="2s">
+       <?php if (get_theme_mod('nosotros_iniciativa_img_6') != NULL){?>
+      <div class="act-img">
+        <img src="<?php echo get_theme_mod('nosotros_iniciativa_img_6') ?>">
+      </div>
+ <?php }
+         ?> 
+      <div class="text-act">
+      <?php if (get_theme_mod('nosotros_iniciativa_titulo_6') != NULL){?>
+        <div  class="categ">
+          <p><?php echo get_theme_mod('nosotros_iniciativa_titulo_6') ?></p>
+        </div>
+ <?php }
+         ?> 
+         <?php if (get_theme_mod('nosotros_iniciativa_contenido_6') != NULL){?>
+        <div  class="title-act">
+          <h6><?php echo get_theme_mod('nosotros_iniciativa_contenido_6') ?></h6>
+        </div>
+         <?php }
+         ?> 
+      </div>
+    </div>
+	  
+	  
     </div>
   </div>
 </div>
+</div>
 </section>
 
-<section id="about" class="container impacto">
+<section class=" impacto mision">
+	<div class="padding-right-left">
+		
+
   <div class="impacto_child">
+
+
+
     <div class="impacto_informacion">
        <?php if (get_theme_mod('nosotros_mision_titulo_principal') != NULL){?>
       <h3><?php echo get_theme_mod('nosotros_mision_titulo_principal') ?></h3>
@@ -174,131 +239,43 @@
          ?> 
 
   </div>
-   <?php if (get_theme_mod('nosotros_mision_img') != NULL){?>
-    <div class="impacto_child_img">
+	      <div class="impacto_child_img">
       <img  src="<?php echo get_theme_mod('nosotros_mision_img') ?>">
     </div>
-    <?php }
-         ?> 
+  </div>
+	</div>
 </section>
 
-<section class="vistas">
+<section class="vistas products">
   <h3>VISTOS RECIENTEMENTE</h3>
       <div class="multiple-items">
-        <div class="block4 card-product">
-           <a href="#" class="addwishlist">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </a>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card1.png">
+		  <?php $args = array( 'post_type' => 'product'); ?>
+              <?php $loop = new WP_Query( $args ); ?>
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+        <div class="card-product">
+					<div class="card-products__heart">
+					<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]') ?>
+				</div>
+			<div class="card-products__img" >
+		
+				           
+
+				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
+			</div>
+            
           <div class="text-product">
-            <h5>Classic Clock</h5>
-            <p>$169,00</p>
+  <a href="<?php the_permalink(); ?>" class="product-title" ><?php the_title(); ?></a>
+            <p class="product-price" > <?php echo $product->get_price_html();  ?></p>
             <div class="colors">
-              <div class="black"></div>
-              <div class="blue"></div>
-              <div class="gray"></div>
+	<?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
+				<div class="black" style="background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
+					<?php }?>
             </div>
           </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
 
-            <div class="block2-btn-addcart trans-0-4">
-              <!-- Button -->
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
-            </div>
-          </div>
         </div>
-
-        <div class="block4 card-product">
-            <a href="#" class="addwishlist">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </a>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card2.png">
-          <div class="text-product">
-            <h5>Classic Clock</h5>
-            <p>$169,00</p>
-            <div class="colors">
-              <div class="black"></div>
-              <div class="blue"></div>
-              <div class="gray"></div>
-            </div>
-          </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
-
-            <div class="block2-btn-addcart trans-0-4">
-              <!-- Button -->
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="block4 card-product">
-            <a href="#" class="addwishlist">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </a>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card1.png">
-          <div class="text-product">
-            <h5>Classic Clock</h5>
-            <p>$169,00</p>
-            <div class="colors">
-              <div class="black"></div>
-              <div class="blue"></div>
-              <div class="gray"></div>
-            </div>
-          </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
-
-            <div class="block2-btn-addcart trans-0-4">
-              <!-- Button -->
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="block4 card-product">
-            <a href="#" class="addwishlist">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
-            </a>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/card2.png">
-          <div class="text-product">
-            <h5>Classic Clock</h5>
-            <p>$169,00</p>
-            <div class="colors">
-              <div class="black"></div>
-              <div class="blue"></div>
-              <div class="gray"></div>
-            </div>
-          </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
-
-            <div class="block2-btn-addcart trans-0-4">
-              <!-- Button -->
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
-            </div>
-          </div>
-        </div>
-
+       <?php  endwhile; ?> 
+		  
       </div>
 </section>
  <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 <footer class="ftco-footer ftco-section">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-3 logo-footer">
+  <div class=" container padding-right-left">
+    <div class="container-grid">
+      <div class="logo-footer">
         <div class="ftco-footer-widget">
             <?php if (get_theme_mod('logo') != NULL){?>  
           <div class="logo-footer" style="justify-content: flex-start;">
@@ -27,10 +27,10 @@
         </div>
       </div>
 
-      <div class="col-md-3 logo-footer">
+      <div class=" logo-footer">
         <div class="ftco-footer-widget">
           <h2 style="color: #0f4388; font-weight: bold" class="ftco-heading-2">MENÚ</h2>
-          <div class="block-237 ">
+          <div>
             <ul>
              
               <li ><a href="  ">Contáctanos</a></li>
@@ -43,9 +43,9 @@
       </div>
 
 
-      <div class="col-md-3 logo-footer">
+      <div class="logo-footer">
         <div class="ftco-footer-widget">
-          <div class="block-237 ">
+          <div class=" ">
             <ul>
               <li><a href="<?php echo bloginfo('url').'/index.php/privacy-policy';?>">Política de privacidad</a></li>
               <li><a href="">Cambios y devoluciones</a></li>
@@ -55,9 +55,9 @@
 
       </div>
 
-      <div class="col-md-3 logo-footer">
+      <div class=" ">
         <div class="ftco-footer-widget">
-          <div class="block-237 ">
+          <div class="">
             <ul>   
                  <?php if (get_theme_mod('footer_direccion') != NULL){?>  
               <li><a href="#"><img style="width: 10%; margin-right: 3px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loca.svg"><span class="text"><?php echo get_theme_mod('footer_direccion') ?></span></a></li>
@@ -82,10 +82,10 @@
   <div class=" copy text-center">
 	  <a href="https://www.branch.com.co/">
     <p style="margin-bottom: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 22px;
     color: #000!important;
-    font-weight: bold;">Copyright 2020 Branch - Sitios Web
+   ">Copyright 2020 Branch - Sitios Web
   </p>
 		  </a>
 </div>

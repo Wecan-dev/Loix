@@ -1,0 +1,8 @@
+2021-06-01T14:41:33+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 58
+
+2021-06-01T14:41:47+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 58
+
+2021-06-01T15:08:53+00:00 CRITICAL syntax error, unexpected end of file en /var/www/html/Loix/wp-content/themes/loix/archive.php en la línea 58
+
+2021-06-01T16:17:32+00:00 CRITICAL syntax error, unexpected '$product' (T_VARIABLE) en /var/www/html/Loix/wp-content/themes/loix/woocommerce/content-single-product.php en la línea 335
+

@@ -1,4 +1,3 @@
-
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -104,14 +103,18 @@ $('.multiple-items').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+	 draggable: false,
   asNavFor: '.slider-nav'
+	 
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   asNavFor: '.slider-for',
-  dots: true,
-  focusOnSelect: true
+  dots: false,
+	draggable: false,
+  focusOnSelect: true,
+	
 });
 
 $('.dropdown-toggle').dropdown()
@@ -130,3 +133,18 @@ $('.head').click(function(){
   $(this).parent().find('.arrow').toggleClass('arrow-animate');
   $(this).parent().find('.content').slideToggle(280);
 });
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}

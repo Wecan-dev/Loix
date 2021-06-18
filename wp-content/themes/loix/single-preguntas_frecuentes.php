@@ -22,7 +22,7 @@
        <?php $preguntas_frecuentes = new WP_Query($args); ?>  
 	  <div class="content">
                  <?php while ( $preguntas_frecuentes->have_posts() ) : $preguntas_frecuentes->the_post(); ?>
-	   <div>
+	   <div class="faqs-single__title" >
         <input type="checkbox" id="question<?php echo $i?>" name="q" class="questions">
         <div class="plus2">+</div>
         <label for="question<?php echo $i?>" class="question">

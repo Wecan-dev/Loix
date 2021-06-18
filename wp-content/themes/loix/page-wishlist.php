@@ -1,8 +1,10 @@
 <?php get_header(); 
-if (is_user_logged_in()){ 
-  echo do_shortcode('[yith_wcwl_wishlist]');
-} 
-else { ?>
+if (is_user_logged_in()){ ?>
+	<div class="container main-wishlist__content">
+		 <?php echo do_shortcode('[yith_wcwl_wishlist]'); ?>
+</div>
+ 
+<?php }  else { ?>
 <?php  echo do_shortcode('[yith_wcwl_wishlist]'); ?>  
 <section class="padding-left-right">
 <div class="woocommerce ">
@@ -18,11 +20,6 @@ else { ?>
 </div>
 <dir class="wishlist_title"></dir>
 </section>
-<style type="text/css">
-  .border-cart{
-    display: none;
-  }
-</style>
 <?php } ?>
 
 <?php get_footer(); ?>

@@ -48,6 +48,15 @@ do_action( 'woocommerce_before_reset_password_form' );
 	<?php wp_nonce_field( 'reset_password', 'woocommerce-reset-password-nonce' ); ?>
 
 </form>
+<style>
+.woocommerce {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.woocommerce p {
+		    font-family: Helvetica;
+	}</style>
 <?php
 do_action( 'woocommerce_after_reset_password_form' );
 

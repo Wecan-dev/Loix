@@ -22,12 +22,13 @@ do_action( 'woocommerce_before_lost_password_form' );
  <section class="register">
     <div class="register_form container">
 
-      <div class="title_register">
-        <i class="fa fa-user" style="    color: #0f4388; margin-bottom: 5%;" aria-hidden="true"></i>
+      <div class="login-icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user.png">
 
-        <h4><span style="color: #000; font-weight: bold;">OLVIDASTE TU CONTRASEÑA</span></h4>
-        <p>¿perdiste tu contraseña? Por favor, introduzca su nombre de <br> usuario o su dirección de correo electrónico. Recibiras un enlance <br> para crear una nueva contraseña por correo electrónico  </p>
       </div>
+
+        <h4 class="login-title" >OLVIDASTE TU CONTRASEÑA</h4>
+        <p class="login-text">¿perdiste tu contraseña? Por favor, introduzca su nombre de <br> usuario o su dirección de correo electrónico. Recibiras un enlance <br> para crear una nueva contraseña por correo electrónico  </p>
     
         <form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
@@ -43,7 +44,7 @@ do_action( 'woocommerce_before_lost_password_form' );
 
 	<p class="woocommerce-form-row form-row">
 		<input type="hidden" name="wc_reset_password" value="true" />
-		<button type="submit" class="woocommerce-Button button btn-black" value="<?php esc_attr_e( 'Reset password', 'woocommerce' ); ?>"><?php esc_html_e( 'Reset password', 'woocommerce' ); ?></button>
+		<button type="submit" class="btn-login" value="<?php esc_attr_e( 'Reset password', 'woocommerce' ); ?>"><?php esc_html_e( 'Reset password', 'woocommerce' ); ?></button>
 	</p>
 
 	<?php wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ); ?>
@@ -53,7 +54,24 @@ do_action( 'woocommerce_before_lost_password_form' );
 
       </div>
     </section>
+<style>
+	.login-text {
+		font-size: 15px;
+	}
+	
+		
+			header {
+				background: #000;
+			}
+			.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input, .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input:hover, .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input:focus, .dgwt-wcas-search-wrapp  {
+				background-color: #000!important;
+			}
+				.woocommerce {
+	  background-color: #d8d8d8;
+			}
+	
 
+</style>
 
 <?php
 do_action( 'woocommerce_after_lost_password_form' );

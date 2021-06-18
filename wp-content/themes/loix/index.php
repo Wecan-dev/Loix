@@ -1,10 +1,13 @@
- <?php get_header(); ?>
+<?php get_header(); ?>
 
 
 <div class="main-banner">
   <div class="main-banner__content">
  <?php if (get_theme_mod('slider_item_1') != NULL){?>  
     <div class="main-banner__item">
+		      <div class="demo">
+          <a href="#section02"><span></span></a>
+        </div>
       <div class="mask">
         <div class="main-banner__text">
            <?php if (get_theme_mod('slider_titulo') != NULL){?>  
@@ -21,14 +24,12 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_texto_del_boton') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_url_del_boton') ?>"><?php echo get_theme_mod('slider_texto_del_boton') ?></a>
-         </div>
+          <a  class="btn_custom"
+           href="<?php echo get_theme_mod('slider_url_del_boton') ?>"><?php echo get_theme_mod('slider_texto_del_boton') ?>
+         </a>
           <?php }
          ?> 
-         <div id="section01" class="demo">
-          <a href="#section02"><span></span></a>
-        </div>
+   
 
       </div>
     </div>
@@ -76,9 +77,9 @@
          ?> 
 
            <?php if (get_theme_mod('slider_texto_del_boton_') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_url_del_boton_2') ?>"><?php echo get_theme_mod('slider_texto_del_boton_') ?></a>
-         </div>
+          <a  class="btn_custom"
+           href="<?php echo get_theme_mod('slider_url_del_boton_2') ?>"><?php echo get_theme_mod('slider_texto_del_boton_') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -102,13 +103,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-		<div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+		
    <?php }
          ?> 
 
@@ -133,9 +128,9 @@
          ?> 
 
            <?php if (get_theme_mod('slider_texto_del_boton_3') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_url_del_boton_3') ?>"><?php echo get_theme_mod('slider_texto_del_boton_') ?></a>
-         </div>
+          <a class="btn_custom"
+            href="<?php echo get_theme_mod('slider_url_del_boton_3') ?>"><?php echo get_theme_mod('slider_texto_del_boton_') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -190,9 +185,9 @@
          ?> 
 
            <?php if (get_theme_mod('slider_texto_del_boton_4') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_url_del_boton_4') ?>"><?php echo get_theme_mod('slider_texto_del_boton_') ?></a>
-         </div>
+           <a class="btn_custom"
+           href="<?php echo get_theme_mod('slider_url_del_boton_4') ?>"><?php echo get_theme_mod('slider_texto_del_boton_') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -248,13 +243,13 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_2_texto_del_boton') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_2_url_del_boton') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton') ?></a>
-         </div>
+           <a class="btn_custom"
+           href="<?php echo get_theme_mod('slider_2_url_del_boton') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton') ?>
+         </a>
           <?php }
          ?> 
-         <div id="section01" class="demo">
-          <a href="#section02"><span></span></a>
+         <div  class="demo">
+          <a href="#section03"><span></span></a>
         </div>
 
       </div>
@@ -275,13 +270,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-		<div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+		
    <?php }
          ?> 
 	  <!-- section 2 slider 2 -->
@@ -303,9 +292,9 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_2_texto_del_boton_2') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_2_url_del_boton_2') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton_2') ?></a>
-         </div>
+           <a  class="btn_custom"
+          href="<?php echo get_theme_mod('slider_2_url_del_boton_2') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton_2') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -330,13 +319,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-		<div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+		
 <?php }
          ?> 
 	    <!-- section 2 slider 3 -->
@@ -358,9 +341,9 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_2_texto_del_boton_3') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_2_url_del_boton_3') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton_3') ?></a>
-         </div>
+          <a class="btn_custom"
+            href="<?php echo get_theme_mod('slider_2_url_del_boton_3') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton_3') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -385,13 +368,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-    <div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+    
 <?php }
          ?> 
 	      <!-- section 2 slider 4 -->
@@ -413,9 +390,9 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_2_texto_del_boton_4') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_2_url_del_boton_4') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton_4') ?></a>
-         </div>
+          <a class="btn_custom"
+            href="<?php echo get_theme_mod('slider_2_url_del_boton_4') ?>"><?php echo get_theme_mod('slider_2_texto_del_boton_4') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -440,13 +417,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-    <div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+    
 <?php }
          ?> 
 </div>
@@ -472,13 +443,13 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_3_texto_del_boton') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_3_url_del_boton') ?>"><?php echo get_theme_mod('slider_3_texto_del_boton') ?></a>
-         </div>
+          <a class="btn_custom" 
+            href="<?php echo get_theme_mod('slider_3_url_del_boton') ?>"><?php echo get_theme_mod('slider_3_texto_del_boton') ?>
+        </a>
           <?php }
          ?> 
-         <div id="section01" class="demo">
-          <a href="#section03"><span></span></a>
+         <div  class="demo">
+          <a href="#section04"><span></span></a>
         </div>
 
       </div>
@@ -499,13 +470,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-		<div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+		
   <?php }
          ?> 
 	   <!-- section 3 slider 2 -->
@@ -527,9 +492,9 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_4_texto_del_boton') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_4_url_del_boton') ?>"><?php echo get_theme_mod('slider_4_texto_del_boton') ?></a>
-         </div>
+           <a class="btn_custom"
+           href="<?php echo get_theme_mod('slider_4_url_del_boton') ?>"><?php echo get_theme_mod('slider_4_texto_del_boton') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -554,13 +519,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-		<div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+		
 <?php }
          ?> 
 	    <!-- section 3 slider 3 -->
@@ -582,9 +541,9 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_4_texto_del_boton_3  ') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_4_url_del_boton_3') ?>"><?php echo get_theme_mod('slider_4_texto_del_boton_3 ') ?></a>
-         </div>
+          <a class="btn_custom"
+            href="<?php echo get_theme_mod('slider_4_url_del_boton_3') ?>"><?php echo get_theme_mod('slider_4_texto_del_boton_3 ') ?>
+         </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -609,13 +568,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-    <div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+    
 <?php }
          ?> 
 	     <!-- section 3 slider 4 -->
@@ -637,9 +590,9 @@
            <?php }
          ?> 
            <?php if (get_theme_mod('slider_4_texto_del_boton_4') != NULL){?>  
-          <div class="btn_custom">
-           <a href="<?php echo get_theme_mod('slider_4_url_del_boton_4') ?>"><?php echo get_theme_mod('slider_4_texto_del_boton_4') ?></a>
-         </div>
+          <a class="btn_custom"
+            href="<?php echo get_theme_mod('slider_4_url_del_boton_4') ?>"><?php echo get_theme_mod('slider_4_texto_del_boton_4') ?>
+        </a>
           <?php }
          ?> 
          <div id="section01" class="demo">
@@ -664,13 +617,7 @@
        <p>WOMAN</p>
       </a>
     </div>
-    <div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
-      </a>
-    </div>
-  </div>
+    
 <?php }
          ?> 
  
@@ -702,11 +649,25 @@
          <?php $args = array( 'post_type' => 'product'); ?>
               <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-        <div class="block4 card-product">
-           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
+        <div class="card-product">
+			<div class="card-products__img">
+				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
+				<div class=" card-products__mask">
+      				<div class="card-products__heart">
+						<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]') ?>
+					</div>
+
+              <!-- Button -->
+              <a class="btn_custom"
+                href="<?php the_permalink(); ?>">VER MÁS</a>
+
+          </div>
+				
+			</div>
+           
           <div class="text-product">
-            <h5> <?php the_title(); ?></h5>
-            <p><?php echo $product->get_price_html();  ?></p>
+  <a href="<?php the_permalink(); ?>" class="product-title" ><?php the_title(); ?></a>
+            <p class="product-price" > <?php echo $product->get_price_html();  ?></p>
             <div class="colors">
 					<?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
 				<div class="black" style="background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
@@ -714,19 +675,7 @@
          
             </div>
           </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
-
-            <div class="block2-btn-addcart trans-0-4">
-              <!-- Button -->
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
-            </div>
-          </div>
+     
         </div>
 <?php  endwhile; ?>
       
@@ -739,29 +688,33 @@
           <?php $args = array( 'post_type' => 'product'); ?>
               <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-        <div class="block4 card-product">
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
-          <div class="text-product">
-            <h5><?php the_title(); ?></h5>
-            <p> <?php echo $product->get_price_html();  ?></p>
-            <div class="colors">
-              <div class="black"></div>
-              <div class="blue"></div>
-              <div class="gray"></div>
-            </div>
-          </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
+        <div class="card-product">
+			<div class="card-products__img">
+				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
+				<div class=" card-products__mask">
+      				<div class="card-products__heart">
+						<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]') ?>
+					</div>
 
-            <div class="block2-btn-addcart trans-0-4">
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
+              <!-- Button -->
+              <a class="btn_custom"
+                href="<?php the_permalink(); ?>">VER MÁS</a>
+
+          </div>
+				
+			</div>
+           
+          <div class="text-product">
+  <a href="<?php the_permalink(); ?>" class="product-title" ><?php the_title(); ?></a>
+            <p class="product-price" > <?php echo $product->get_price_html();  ?></p>
+            <div class="colors">
+					<?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
+				<div class="black" style="background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
+					<?php }?>
+         
             </div>
           </div>
+     
         </div>
        <?php  endwhile; ?>
 
@@ -787,29 +740,33 @@
     ); ?>
               <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
-        <div class="block4 card-product">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/image_2.png">
-          <div class="text-product">
-            <h5><?php the_title(); ?></h5>
-            <p><?php echo $product->get_price_html();  ?></p>
-            <div class="colors">
-              <div class="black"></div>
-              <div class="blue"></div>
-              <div class="gray"></div>
-            </div>
-          </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
+        <div class="card-product">
+			<div class="card-products__img">
+				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
+				<div class=" card-products__mask">
+      				<div class="card-products__heart">
+						<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]') ?>
+					</div>
 
-            <div class="block2-btn-addcart trans-0-4">
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
+              <!-- Button -->
+              <a class="btn_custom"
+                href="<?php the_permalink(); ?>">VER MÁS</a>
+
+          </div>
+				
+			</div>
+           
+          <div class="text-product">
+  <a href="<?php the_permalink(); ?>" class="product-title" ><?php the_title(); ?></a>
+            <p class="product-price" > <?php echo $product->get_price_html();  ?></p>
+            <div class="colors">
+					<?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
+				<div class="black" style="background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
+					<?php }?>
+         
             </div>
           </div>
+     
         </div>
           <?php  endwhile; ?>
 
@@ -817,7 +774,7 @@
     </div>
   </div>
 
-  <div id="section07" class="demo">
+  <div class="demo">
     <a href="#section05"><span></span></a>
   </div>
 </section>

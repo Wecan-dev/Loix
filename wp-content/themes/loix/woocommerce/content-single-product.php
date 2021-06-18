@@ -34,12 +34,12 @@ if ( post_password_required() ) {
  <?php get_header(); ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 	<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-		<section class="details" style="padding-top: 150px; padding-bottom: 100px;">
-		<div class="container">
+		<section class="details single-product ">
+		<div class="padding-right-left">
 		  <!--       Detail Product-->
-		  <div class="row no-gutters">
+		  <div class="container-grid">
 			<!--               picture product-->
-			<div class=" col-md-6">
+			<div class="single-product__img">
 
 	<?php
 	/**
@@ -51,7 +51,7 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 </div>
-<div class=" col-md-6">
+<div class="single-product__text">
 
 	<div class="summary entry-summary">
 		<?php
@@ -75,21 +75,37 @@ if ( post_password_required() ) {
 		 <div class="radio radio-plus">
   <label><input type="radio" name="optradio"> Agregar para comparar</label>
 </div>
-<div class="description" id="accordion-2">  
+<div class="description single-accordion" id="accordion-2">  
 	<div class="head">
 	<h5>Descripción</h5>
-		  <i style="color:#0f4388" class="fa fa-play arrow" aria-hidden="true"></i>
     </div>
 	<div class="content">
 <p>
-<?php the_excerpt(); ?><button type="button"  data-toggle="modal" data-target="#myModal"><a style="color:#0f4388">Leer más </a></button> 	
-  </p>	
+<?php the_excerpt(); ?>  </p>	
+
+	<button class="single-accordion__btn" type="button"  data-toggle="modal" data-target="#myModal">Leer más </button> 	
 		 </div>
+	<div class="modal modal2 single-modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Descripción de <span><?php the_title(); ?></span> </h4>
+        </div>
+        <div class="modal-body">
+          <p><?php the_content(); ?></p>
+        </div>
+      
+      </div>
+      
+    </div>
   </div>
-	<div id="accordion-1" class="features">
+  </div>
+	<div id="accordion-1" class="features single-accordion">
     <div class="head">
   	<h5>Características Principales</h5>
-      <i style="color:#0f4388" class="fa fa-play arrow" aria-hidden="true"></i>
     </div>
 		  <div class="content">
   		<div class="features-icons"> 
@@ -129,16 +145,15 @@ if ( post_password_required() ) {
 		
 
   </div>
-		<div id="accordion-3" class="description">
+		<div id="accordion-3" class="description single-accordion">
     <div class="head">
   	<h5>Modo Uso</h5>
-      <i style="color:#0f4388" class="fa fa-play arrow" aria-hidden="true"></i>
     </div>
 		  <div class="content">
   	 <div class="progress-info">
-  	 <h5>
+  	 <h2>
   	Outfit
-    </h5>
+    </h2>
 		  
 		 
 		 <div class="valoracion-1">
@@ -150,9 +165,9 @@ if ( post_password_required() ) {
 		 </div>
     </div>
 		  	 <div class="progress-info">
-  	 <h5>
+  	 <h2>
   	Size
-    </h5>
+    </h2>
 
 		 <div class="valoracion-2">
 	 
@@ -164,9 +179,9 @@ if ( post_password_required() ) {
 					 </div>
     </div>
 <div class="progress-info">
-  	 <h5>
+  	 <h2>
   	Style
-    </h5>
+    </h2>
 
 <div class="valoracion-3">
 	
@@ -178,10 +193,9 @@ if ( post_password_required() ) {
 		
 
   </div>
-			<div id="accordion-4" class="description">
+			<div id="accordion-4" class="description single-accordion">
     <div class="head">
   	<h5>Descripción Técnica</h5>
-      <i style="color:#0f4388" class="fa fa-play arrow" aria-hidden="true"></i>
     </div>
 		  <div class="content">
   <p>	<?php the_field( 'descripcion_tenica' ); ?> </p>
@@ -190,10 +204,10 @@ if ( post_password_required() ) {
 
   </div>
 	
-				<div id="accordion-5" class="description">
+				<div id="accordion-5" class="description single-accordion">
     <div class="head">
   	<h5>Guia de Usuario</h5>
-      <i style="color:#0f4388" class="fa fa-play arrow" aria-hidden="true"></i>
+      
     </div>
 		  <div class="content">
   	  <p>	<?php $guia_de_usuario = get_field( 'guia_de_usuario' ); ?>
@@ -234,11 +248,11 @@ $next_post = get_next_post();
 				</div>
 <?php } ?> -->
 			<div class="arrows2">
-				<?php previous_post_link( ' %link', '%title', true, '', 'product_cat' ); ?>
+				<?php previous_post_link( ' %link',  true, '', 'product_cat' ); ?>
 			
 			</div>
 			<div class="arrows3">	
-		  	  <?php next_post_link( ' %link', '%title', true, '', 'product_cat' ); ?>		
+		  	  <?php next_post_link( ' %link', true, '', 'product_cat' ); ?>		
 	       </div>
 		 
 		</div>
@@ -299,7 +313,7 @@ $next_post = get_next_post();
 	
 </section>
 
-<section class="colecciones">
+<section class="colecciones vistas products">
 			<h3 style="margin-bottom: 60px; text-align:center">PRODUCTOS SIMILARES<br>
 			</h3>
 				 <?php $taxonomy = get_the_terms(get_the_id(),'product_cat'); ?>
@@ -318,31 +332,30 @@ $next_post = get_next_post();
           ); ?>
 	  <?php $product_cat = new WP_Query($args); ?>  
 			<div class="multiple-items">
-				  <?php while ( $product_cat->have_posts() ) : $product_cat->the_post(); ?>
-				<div class="block4 card-product">
-           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
-          <div style="text-align: left;" class="text-product">
-            <h5> <?php the_title(); ?></h5>
-            <p><?php echo $product->get_price_html();  ?></p>
-            <div style="justify-content: end;" class="colors">
-              <?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
+				  <?php while ( $product_cat->have_posts() ) : $product_cat->the_post(); global $product;?>
+        <div class="card-product">
+					<div class="card-products__heart">
+					<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]') ?>
+				</div>
+			<div class="card-products__img" >
+		<a href="<?php the_permalink(); ?>">
+			
+				<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="img">
+				</a>
+				           
+
+			</div>
+            
+          <div class="text-product">
+  <a href="<?php the_permalink(); ?>" class="product-title" ><?php the_title(); ?></a>
+            <p class="product-price" > <?php echo $product->get_price_html();  ?></p>
+            <div class="colors">
+	<?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
 				<div class="black" style="background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
 					<?php }?>
             </div>
           </div>
-          <div class="block2-overlay trans-0-4">
-            <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-              <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-            </a>
 
-            <div class="block2-btn-addcart trans-0-4">
-              <!-- Button -->
-              <button class="btn_custom">
-                <a href="<?php the_permalink(); ?>">VER MÁS</a>
-              </button>
-            </div>
-          </div>
         </div>
 					<?php endwhile ?>
 				
@@ -350,20 +363,13 @@ $next_post = get_next_post();
 		</section>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
-<div class="modal modal2 fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p><?php the_content(); ?></p>
-        </div>
-      
-      </div>
-      
-    </div>
-  </div>
+
+<style>
+	.header__main {
+		background: #000;
+	}
+	
+	.site-main {
+		padding-top: 183px;	
+	}
+</style>

@@ -205,6 +205,78 @@ $wp_customize->add_section('nosotros_iniciativa', array (
       'settings' => 'nosotros_iniciativa_contenido_4',
       'type' => 'textarea'
     ))); 
+
+
+
+     //image
+  $wp_customize->add_setting('nosotros_iniciativa_img_5');
+  
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_iniciativa_img_5', array (
+    'label' => 'Imagen',
+    'section' => 'nosotros_iniciativa',
+    'settings' => 'nosotros_iniciativa_img_5'
+  )));
+   // texto de red
+    $wp_customize->add_setting('nosotros_iniciativa_titulo_5', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_titulo_5', array (
+      'description' => 'Título',
+      'section' => 'nosotros_iniciativa',
+      'settings' => 'nosotros_iniciativa_titulo_5',
+    ))); 
+    // texto de red
+    $wp_customize->add_setting('nosotros_iniciativa_contenido_5', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_contenido_5', array (
+      'description' => 'Contenido',
+      'section' => 'nosotros_iniciativa',
+      'settings' => 'nosotros_iniciativa_contenido_5',
+      'type' => 'textarea'
+    ))); 
+
+
+
+
+     //image
+  $wp_customize->add_setting('nosotros_iniciativa_img_6');
+  
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'nosotros_iniciativa_img_6', array (
+    'label' => 'Imagen',
+    'section' => 'nosotros_iniciativa',
+    'settings' => 'nosotros_iniciativa_img_6'
+  )));
+   // texto de red
+    $wp_customize->add_setting('nosotros_iniciativa_titulo_6', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_titulo_6', array (
+      'description' => 'Título',
+      'section' => 'nosotros_iniciativa',
+      'settings' => 'nosotros_iniciativa_titulo_6',
+    ))); 
+    // texto de red
+    $wp_customize->add_setting('nosotros_iniciativa_contenido_6', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_nosotros_iniciativa_contenido_6', array (
+      'description' => 'Contenido',
+      'section' => 'nosotros_iniciativa',
+      'settings' => 'nosotros_iniciativa_contenido_6',
+      'type' => 'textarea'
+    ))); 
+
+
+
+
+
+
+
   //////////////////////////////////////////////////////
     //////////////MISIÓN///////////////////////////////
 $wp_customize->add_section('nosotros_mision', array (

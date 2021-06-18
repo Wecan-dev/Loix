@@ -28,16 +28,18 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 		
 <?php if ($_GET["create"] != 'account') { ?>
 	<section class="register">
-    <div class="register_form container">
+    <div class="register_form ">
 
-      <div class="title_register">
-        <i class="fa fa-user-circle-o" style="   color: #0f4388; margin-bottom: 5%;" aria-hidden="true"></i>
+		<div class="login-icon" >
+			        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user.png">
 
-        <p> Crea una cuenta para agailizar las futuras compras, hacer un seguimineto del <br> historial de pedidos y recibir correos electrónicos, descuentos, ofertas <br> especiales</p>
-      </div>
+		</div>
+      <p class="login-text">
+        
+
+        Crea una cuenta para agailizar las futuras compras, hacer un seguimineto del <br> historial de pedidos y recibir correos electrónicos, descuentos, ofertas <br> especiales</p>
 	<form class="woocommerce-form woocommerce-form-login login" method="post">
 		
-<h2> Registro </h2>
 			<?php do_action( 'woocommerce_login_form_start' ); ?>
 
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
@@ -52,7 +54,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			<?php do_action( 'woocommerce_login_form' ); ?>
 
 			<p class="form-row">
-				<div class="flex-login mt-negative" >
+				<div class="login-flex" >
 					<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
 						<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
 					</label>
@@ -61,12 +63,9 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 				</p>
 				</div>
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-				<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
+				<button type="submit" class="btn-login" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>">iniciar sesión</button>
 
-			</p>
-
-<br>            <p class="form-row flex-login or"><span class="or-space">OR</span></p>          
-            <p class="woocommerce-in-account"><a href="?create=account">Create an account<img src="<?php echo get_template_directory_uri(); ?>/assets/img/shop/arrow.png" class=" b-error"></a></p>
+            <p class="woocommerce-in-account create-account "><a href="?create=account">Crear una cuenta<i style="color: #000" class="fa fa-angle-right" aria-hidden="true"></i></a></p>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
 
@@ -76,20 +75,20 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 		
 <?php } ?>  
 
-  </div>
 </section>
 <?php if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) : ?>
 
-	</div>
 <?php if ($_GET["create"] == 'account') { ?>
 	<section class="register">
-    <div class="register_form container">
+    <div class="register_form">
 
-      <div class="title_register">
-        <i class="fa fa-user-circle-o" style="   color: #0f4388; margin-bottom: 5%;" aria-hidden="true"></i>
-<h4>  REGISTRO</h4>
-
-<form method="post" class="woocommerce-form woocommerce-form-register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
+      <div class="login-icon">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user.png">
+    </div>
+		<h2 class="login-title" > 
+			Registro
+		</h2>
+		  <form method="post" class="woocommerce-form woocommerce-form-register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
 			
 			<?php do_action( 'woocommerce_register_form_start' ); ?>
 
@@ -108,8 +107,8 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-					<label for="reg_password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-					<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" autocomplete="new-password" />
+				
+					<input placeholder="<?php esc_html_e( 'Password', 'woocommerce' ); ?>"  type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" autocomplete="new-password" />
 				</p>
 
 			<?php else : ?>
@@ -122,21 +121,31 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 			<p class="woocommerce-FormRow form-row">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
-				<button type="submit" class="woocommerce-Button button" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
+				<button type="submit" class="btn-login" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></button>
 			</p>       
-            <p class="woocommerce-in-account"><a href="?create=">De regreso a iniciar sesión <i style="color: #000" class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+            <p class="woocommerce-in-account create-account"><a href="?create=">De regreso a iniciar sesión <i style="color: #000" class="fa fa-angle-right" aria-hidden="true"></i></a></p>
 
 
 			<?php do_action( 'woocommerce_register_form_end' ); ?>
 
 		</form>
       
-    </div>
-	</div>
 
 </div>
 <?php } ?>
 <?php endif; ?>
 </section>
+		<style>
+		
+			header {
+				background: #000;
+			}
+			.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input, .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input:hover, .dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input:focus, .dgwt-wcas-search-wrapp  {
+				background-color: #000!important;
+			}
+				.woocommerce {
+	  background-color: #d8d8d8;
+			}
+		</style>
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
 

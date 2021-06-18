@@ -19,4 +19,27 @@
 
 	<?php echo do_shortcode('[woocommerce_my_account]'); ?>
 
+
+<style>
+		.header__main {
+				background: #000;
+			}
+	.woocommerce {
+
+		padding-top: 97px
+	}
+	@media (min-width: 0px) and (max-width: 767px) {
+			.woocommerce {
+		padding-top: 80px;
+		}}
+		@media (min-width: 768px) and (max-width: 997px) {
+				.woocommerce {
+		padding-top: 97px;
+	}
+		}
+	
+</style>
+
 <?php get_footer();?>
+
+

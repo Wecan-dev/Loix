@@ -3,7 +3,7 @@
 
   <div class="header "  style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/banner.png);">
     <div class="mask-blog">
-      <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;">COLLECTIONS</h3>
+      <h3>COLLECTIONS</h3>
       <p class="none-this">Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
       tempor incididunt ut labore</p>
          <div id="section01" class="demo">
@@ -25,8 +25,9 @@
     </div>
   </div>
 
-<div id="collections" class="main-banner">
-	 <?php $args = array( 'post_type' => 'collection' ); ?>
+<div id="collections" class="main-banner collections">
+<div class="padding-right-left" >	
+	<?php $args = array( 'post_type' => 'collection' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
   <div class="main-banner-card">
@@ -41,9 +42,8 @@
             <p><?php the_content(); ?>
             </p>
           </div>
-          <div class="btn_custom" >
-           <a href="<?php the_field('collection_url_del_boton'); ?> "><?php the_field('collection_texto_del_boton'); ?> </a>
-         </div>
+          <a class="btn_custom" 
+           href="<?php the_field('collection_url_del_boton'); ?> "><?php the_field('collection_texto_del_boton'); ?> </a>
       </div>
     </div>
     <div class="main-banner__img2">
@@ -54,6 +54,7 @@
 
 </div>
    <?php endwhile; ?> 
+</div>
 </div>
 
 

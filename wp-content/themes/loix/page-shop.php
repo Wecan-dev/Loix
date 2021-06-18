@@ -4,7 +4,7 @@
 
   <div class="header "  style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/productos.png);">
     <div class="mask-blog">
-      <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;">OUTLET</h3>
+      <h3>PRODUCTOS</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
       tempor incididunt ut labore</p>
          <div id="section01" class="demo">
@@ -19,8 +19,8 @@
 	<div class="filter">
 
 
-    <div class="categorys-filter">
-    	<p>PRECIO</p>
+    <div class="categories-filter">
+    	<p class="categories-filter__title" >PRECIO</p>
 <form method="get" action="">
 	<div class="price_slider_wrapper">
 		<div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style=""><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 76.6819%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 76.6819%;"></span></div>
@@ -37,15 +37,10 @@
 </form>
     </div>
 
-    <div class="categorys-filter">
-    	<p>Talla</p>
+    <div class="categories-filter">
+    	<p class="categories-filter__title">Talla</p>
 	<ul class="cat-list">
-
-    <!-- 		<li><input type="radio" id="color" name="gender" value="color"><span class="color-radio"></span> rojo</li>
-    		<li><input type="radio" id="color" name="gender" value="color"><span class="color-radio2"></span> Azul</li>
-    		<li>Amarillo</li> -->
-    		<ul>
-    <li class="color-check">
+ <li class="color-check">
         <input type='checkbox' value='1' name='radio' id='radio1'/>
        <label for='radio1'><span class="color-radio"></span></label> Grande
     </li>
@@ -57,18 +52,13 @@
         <label for='radio3'><span class="color-radio2"></span></label> Pequeño
     </li>
 </ul>
-    	</ul>
     </div>
 
 
-          <div class="categorys-filter">
-    	<p>Color</p>
+          <div class="categories-filter">
+    	<p class="categories-filter__title" >Color</p>
 	<ul class="cat-list">
 
-    <!-- 		<li><input type="radio" id="color" name="gender" value="color"><span class="color-radio"></span> rojo</li>
-    		<li><input type="radio" id="color" name="gender" value="color"><span class="color-radio2"></span> Azul</li>
-    		<li>Amarillo</li> -->
-    		<ul>
     <li class="color-check">
         <input type='checkbox' value='1' name='radio' id='radio4'/>
        <label for='radio4'><span class="color-radio"></span></label> Rojo
@@ -81,18 +71,13 @@
         <label for='radio6'><span class="color-radio2"></span></label> Verde
     </li>
 </ul>
-    	</ul>
     </div>
 
 
-    <div class="categorys-filter">
-    	<p>Categorias</p>
+    <div class="categories-filter">
+    	<p class="categories-filter__title" >Categorias</p>
 	<ul class="cat-list">
 
-    <!-- 		<li><input type="radio" id="color" name="gender" value="color"><span class="color-radio"></span> rojo</li>
-    		<li><input type="radio" id="color" name="gender" value="color"><span class="color-radio2"></span> Azul</li>
-    		<li>Amarillo</li> -->
-    		<ul>
     <li class="color-check">
         <input type='checkbox' value='1' name='radio' id='radio7'/>
        <label for='radio7'><span class="color-radio"></span></label> Start
@@ -109,7 +94,6 @@
         <label for='radio10'><span class="color-radio2"></span></label> Essentials
     </li>
 </ul>
-    	</ul>
     </div>
 	</div>
 	<div class="cards-shop">
