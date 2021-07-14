@@ -7,6 +7,8 @@
 
 namespace Automattic\WooCommerce\Admin\Notes;
 
+use Automattic\WooCommerce\Admin\WCAdminHelper;
+
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -20,16 +22,7 @@ trait NoteTraits {
 	 * @return bool Whether or not WooCommerce admin has been active for $seconds.
 	 */
 	public static function wc_admin_active_for( $seconds ) {
-		// Getting install timestamp reference class-wc-admin-install.php.
-		$wc_admin_installed = get_option( 'woocommerce_admin_install_timestamp', false );
-
-		if ( false === $wc_admin_installed ) {
-			update_option( 'woocommerce_admin_install_timestamp', time() );
-
-			return false;
-		}
-
-		return ( ( time() - $wc_admin_installed ) >= $seconds );
+		return WCAdminHelper::is_wc_admin_active_for( $seconds );
 	}
 
 	/**
@@ -49,7 +42,7 @@ trait NoteTraits {
 	public static function can_be_added() {
 		$note = self::get_note();
 
-		if ( ! $note instanceof WC_Admin_Note ) {
+		if ( ! $note instanceof Note && ! $note instanceof WC_Admin_Note ) {
 			return;
 		}
 
@@ -59,7 +52,7 @@ trait NoteTraits {
 
 		if (
 			'no' === get_option( 'woocommerce_show_marketplace_suggestions', 'yes' ) &&
-			WC_Admin_Note::E_WC_ADMIN_NOTE_MARKETING === $note->get_type()
+			Note::E_WC_ADMIN_NOTE_MARKETING === $note->get_type()
 		) {
 			return false;
 		}
@@ -97,7 +90,7 @@ trait NoteTraits {
 		$note_ids   = $data_store->get_notes_with_name( self::NOTE_NAME );
 
 		foreach ( $note_ids as $note_id ) {
-			$note = WC_Admin_Notes::get_note( $note_id );
+			$note = Notes::get_note( $note_id );
 
 			if ( $note ) {
 				$data_store->delete( $note );
@@ -115,9 +108,9 @@ trait NoteTraits {
 		$note_ids   = $data_store->get_notes_with_name( self::NOTE_NAME );
 
 		if ( ! empty( $note_ids ) ) {
-			$note = WC_Admin_Notes::get_note( $note_ids[0] );
+			$note = Notes::get_note( $note_ids[0] );
 
-			if ( WC_Admin_Note::E_WC_ADMIN_NOTE_ACTIONED === $note->get_status() ) {
+			if ( Note::E_WC_ADMIN_NOTE_ACTIONED === $note->get_status() ) {
 				return true;
 			}
 		}

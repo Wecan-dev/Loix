@@ -1,29 +1,23 @@
-<?php get_header(); ?>
-  <?php  $extension = pathinfo(get_theme_mod('smart_imagen'))['extension']; ?>
-             <?php if($extension=="jpg" || $extension == "jpeg" || $extension == "png"){ ?>
-             <div class="header "  style="background-image: url(<?php echo get_theme_mod('smart_imagen') ?>);">
-              <?php } else { ?> 
-                    <video class="header" id="mivideo" autoplay preload loop muted>
-                        <source src="<?php echo get_theme_mod('smart_imagen') ?>" type="video/mp4">
-                    </video>  
-		     <?php } ?>
+ <?php get_header(); ?>
 
- 
+
+  <div class="header "  style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/banner.png);">
     <div class="mask-blog">
-      <h3 style="font-weight: bold; color: #fff; text-align: center; font-size:70px;"><?php echo get_theme_mod('smart_titulo') ?></h3>
-      <p class="none-this"><?php echo get_theme_mod('smart_subtitulo') ?></p>
+      <h3>SMART</h3>
+      <p class="none-this">Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> sed do eiusmod
+      tempor incididunt ut labore</p>
          <div id="section01" class="demo">
           <a href="#collections"><span></span></a>
         </div>
          <div class="link-page">
-      <a href="<?php echo bloginfo('url').'/index.php/woman';?>" class="link-page_item">
+      <a href="<?php bloginfo('url') ?>/home-woman" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg"> 
        <p>WOMAN</p>
       </a>
     </div>
 
        <div class="link-page2">
-      <a href="<?php echo bloginfo('url').'/index.php/men';?>" class="link-page_item">
+      <a href="<?php bloginfo('url') ?>/" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
        <p>MEN</p>
       </a>
@@ -31,8 +25,9 @@
     </div>
   </div>
 
-<div id="collections" class="main-banner smart-page">
-   <?php $args = array( 'post_type' => 'smart' ); ?>
+<div id="collections" class="main-banner collections">
+<div class="padding-right-left" >	
+	<?php $args = array( 'post_type' => 'smart' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
                  <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
   <div class="main-banner-card">
@@ -44,12 +39,11 @@
             <p><?php the_title(); ?></p>
           </div>
           <div class="main-banner__description">
-            <p> <?php the_content(); ?>
+            <p><?php the_content(); ?>
             </p>
           </div>
-          <a class="btn_custom"
-           a href="<?php the_field('smart_boton_url'); ?> "><?php the_field('smart_boton_texto'); ?> </a>
-         
+          <a class="btn_custom" 
+           href="<?php the_field('smart_boton_url'); ?> "><?php the_field('smart_boton_texto'); ?> </a>
       </div>
     </div>
     <div class="main-banner__img2">
@@ -59,10 +53,9 @@
   </div>
 
 </div>
- <?php endwhile; ?>
-  
-
+   <?php endwhile; ?> 
+</div>
 </div>
 
- <?php get_footer(); ?>
 
+ <?php get_footer(); ?>

@@ -1,0 +1,9 @@
+2021-06-18T22:35:34+00:00 CRITICAL Uncaught Error: Call to undefined function wvs_wpml_object_id() in /var/www/html/Loix/wp-content/plugins/woo-variation-swatches-pro/includes/functions.php:128
+Stack trace:
+#0 /var/www/html/Loix/wp-content/plugins/woo-variation-swatches-pro/includes/functions.php(110): wvs_wpml_translate_terms('pa_color', Array)
+#1 /var/www/html/Loix/wp-content/plugins/woo-variation-swatches-pro/includes/functions.php(91): wvs_wpml_translate_options(Array)
+#2 /var/www/html/Loix/wp-content/plugins/woo-variation-swatches-pro/includes/class-woo-variation-swatches-pro-product-meta.php(70): wvs_pro_get_product_option(4832)
+#3 /var/www/html/Loix/wp-content/plugins/woo-variation-swatches-pro/includes/class-woo-variation-swatches-pro-product-meta.php(55): Woo_Variation_Swatches_Pro_Product_Meta->panel_contents(Object(WC_Product_Variable))
+#4 /var/www/html/Loix/wp-includes/class-wp-hook.php(287): Woo_Variation_Swatches_Pro_Product_Meta->add_tab_panel('')
+#5 /var/www/html/Loix/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(' en /var/www/html/Loix/wp-content/plugins/woo-variation-swatches-pro/includes/functions.php en la línea 128
+

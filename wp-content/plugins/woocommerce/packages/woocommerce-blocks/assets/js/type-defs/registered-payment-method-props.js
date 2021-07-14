@@ -1,7 +1,7 @@
 /**
  * @typedef {import('@woocommerce/type-defs/cart').CartTotalItem} CartTotalItem
  * @typedef {import('@woocommerce/type-defs/cart').CartShippingOption} CartShippingOption
- * @typedef {import('@woocommerce/type-defs/cart').CartShippingAddress} CartShippingAddress
+ * @typedef {import('@woocommerce/type-defs/shipping').ShippingAddress} ShippingAddress
  * @typedef {import('@woocommerce/type-defs/billing').BillingData} BillingData
  * @typedef {import('@woocommerce/type-defs/contexts').PaymentMethodCurrentStatus} PaymentMethodCurrentStatus
  * @typedef {import('@woocommerce/type-defs/contexts').PaymentStatusDispatch} PaymentStatusDispatch
@@ -97,10 +97,10 @@
  *                                                       rates (rate ids).
  * @property {Function}             setSelectedRates     A function for setting
  *                                                       selected rates
- *                                                       (recieves id)
+ *                                                       (receives id)
  * @property {boolean}              isSelectingRate      True when rates are
  *                                                       being selected.
- * @property {CartShippingAddress}  shippingAddress      The current set
+ * @property {ShippingAddress}      shippingAddress      The current set
  *                                                       shipping address.
  * @property {Function}             setShippingAddress   A function for setting
  *                                                       the shipping address.
@@ -132,16 +132,15 @@
 /**
  * @typedef EventRegistrationProps
  *
+ * @property {function(function())} onCheckoutValidationBeforeProcessing Used to subscribe callbacks firing when
+ *                                                              validation of the submitted checkout data happens,
+ *                                                              before it's sent off to the server.
  * @property {function(function())} onCheckoutAfterProcessingWithSuccess Used to subscribe callbacks
  *                                                              firing when checkout has completed
  *                                                              processing successfully.
  * @property {function(function())} onCheckoutAfterProcessingWithError Used to subscribe callbacks
  *                                                              firing when checkout has completed
  *                                                              processing with an error.
- * @property {function(function())} onCheckoutBeforeProcessing  Used to subscribe callbacks that
- *                                                              will fire when checkout begins
- *                                                              processing (as a part of the
- *                                                              processing process).
  * @property {function(function())} onShippingRateSuccess       Used to subscribe callbacks that
  *                                                              will fire when shipping rates for a
  *                                                              given address have been received
@@ -218,6 +217,9 @@
  *                                                                 when the express payment method
  *                                                                 modal closes and control is
  *                                                                 returned to checkout.
+ * @property {boolean}                    shouldSavePayment        A boolean which indicates whether
+ *                                                                 the shopper has checked the save
+ *                                                                 payment method checkbox.
  */
 
 export {};

@@ -45,14 +45,14 @@
                      
     <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
 		<div class="link-page2">
       <a href="<?php echo bloginfo('url').'/smart_';?>" class="link-page_item">
        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.svg"> 
-       <p>SMART</p>
+       <p>ELITE</p>
       </a>
     </div>
   </div>
@@ -99,8 +99,8 @@
 	 
   <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
 		
@@ -150,8 +150,8 @@
    
   <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
     <div class="link-page2">
@@ -207,8 +207,8 @@
    
   <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
     <div class="link-page2">
@@ -266,8 +266,8 @@
 
     <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
 		
@@ -315,8 +315,8 @@
    
     <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
 		
@@ -364,8 +364,8 @@
    
     <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
     
@@ -413,8 +413,8 @@
    
     <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
     
@@ -466,8 +466,8 @@
  
            <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
 		
@@ -515,8 +515,8 @@
  
        <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
 		
@@ -564,8 +564,8 @@
  
        <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
     
@@ -613,8 +613,8 @@
  
        <div class="link-page">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/next.svg">
-      <a href="<?php echo bloginfo('url').'/home-woman';?>" class="link-page_item">
-       <p>WOMAN</p>
+      <a href="<?php echo bloginfo('url').'/mujer';?>" class="link-page_item">
+       <p>MUJER</p>
       </a>
     </div>
     
@@ -626,7 +626,7 @@
 
 
 <section id="section04" class="products">
-  <h3>PRODUCTS</h3>
+  <h3>RELOJES PARA ÉL</h3>
 
 
   <div class="slider-nav tab2"> 

@@ -1,0 +1,30 @@
+2021-06-29T21:45:20+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /var/www/html/Loix/wp-content/plugins/yith-woocommerce-featured-audio-video-content-premium/includes/classes/class.ywcfav-frontend-premium.php:45
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/class-wp-hook.php(287): YITH_Featured_Audio_Video_Frontend_Premium->get_video_audio_content('    <div class=...', 0)
+#1 /var/www/html/Loix/wp-includes/plugin.php(206): WP_Hook->apply_filters('    <div class=...', Array)
+#2 /var/www/html/Loix/wp-content/plugins/woo-variation-gallery/includes/slider-template-js.php(22): apply_filters('woocommerce_sin...', '    <div class=...', 0)
+#3 /var/www/html/Loix/wp-content/plugins/woo-variation-gallery/woo-variation-gallery.php(445): require_once('/var/www/html/L...')
+#4 /var/www/html/Loix/wp-includes/class-wp-hook.php(287): Woo_Variation_Gallery->slider_template_js('')
+#5 /var/www/html/Loix/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/Loix/wp-includes/plugin.php(478): WP_ en /var/www/html/Loix/wp-content/plugins/yith-woocommerce-featured-audio-video-content-premium/includes/classes/class.ywcfav-frontend-premium.php en la línea 45
+
+2021-06-29T21:45:26+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /var/www/html/Loix/wp-content/plugins/yith-woocommerce-featured-audio-video-content-premium/includes/classes/class.ywcfav-frontend-premium.php:45
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/class-wp-hook.php(287): YITH_Featured_Audio_Video_Frontend_Premium->get_video_audio_content('    <div class=...', 0)
+#1 /var/www/html/Loix/wp-includes/plugin.php(206): WP_Hook->apply_filters('    <div class=...', Array)
+#2 /var/www/html/Loix/wp-content/plugins/woo-variation-gallery/includes/slider-template-js.php(22): apply_filters('woocommerce_sin...', '    <div class=...', 0)
+#3 /var/www/html/Loix/wp-content/plugins/woo-variation-gallery/woo-variation-gallery.php(445): require_once('/var/www/html/L...')
+#4 /var/www/html/Loix/wp-includes/class-wp-hook.php(287): Woo_Variation_Gallery->slider_template_js('')
+#5 /var/www/html/Loix/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/Loix/wp-includes/plugin.php(478): WP_ en /var/www/html/Loix/wp-content/plugins/yith-woocommerce-featured-audio-video-content-premium/includes/classes/class.ywcfav-frontend-premium.php en la línea 45
+
+2021-06-29T21:45:48+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /var/www/html/Loix/wp-content/plugins/yith-woocommerce-featured-audio-video-content-premium/includes/classes/class.ywcfav-frontend-premium.php:45
+Stack trace:
+#0 /var/www/html/Loix/wp-includes/class-wp-hook.php(287): YITH_Featured_Audio_Video_Frontend_Premium->get_video_audio_content('    <div class=...', 0)
+#1 /var/www/html/Loix/wp-includes/plugin.php(206): WP_Hook->apply_filters('    <div class=...', Array)
+#2 /var/www/html/Loix/wp-content/plugins/woo-variation-gallery/includes/slider-template-js.php(22): apply_filters('woocommerce_sin...', '    <div class=...', 0)
+#3 /var/www/html/Loix/wp-content/plugins/woo-variation-gallery/woo-variation-gallery.php(445): require_once('/var/www/html/L...')
+#4 /var/www/html/Loix/wp-includes/class-wp-hook.php(287): Woo_Variation_Gallery->slider_template_js('')
+#5 /var/www/html/Loix/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/Loix/wp-includes/plugin.php(478): WP_ en /var/www/html/Loix/wp-content/plugins/yith-woocommerce-featured-audio-video-content-premium/includes/classes/class.ywcfav-frontend-premium.php en la línea 45
+

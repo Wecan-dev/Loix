@@ -128,10 +128,8 @@
     position: relative;
     }
     
-    .main_menu > li:hover > .sub_menu {
-    visibility: visible;
-    opacity: 1;
-    }
+    
+	
     
 .form_search{
     transform: translateX(50%);
@@ -152,15 +150,20 @@
     
     .main_menu > li > .sub_menu {
     top: 100%;
-    left: 10%;
+    left: 0%;
     right: 15%;
     position: absolute;
+		    padding-left: 0;
     }
     
     .sub_menu li:hover > .sub_menu {
     visibility: visible;
     opacity: 1;
     } 
+.sub_menu.active{
+		visibility: visible;
+    opacity: 1;
+	}
     
     .sub_menu li { 
     transition: all 0.3s;
@@ -168,10 +171,12 @@
     }
     
     .sub_menu li, .sub_menu a {
-    padding: 10px;
-        font-family: 'HelveticaNeue';
+   padding: 5px 10px;
+    font-family: 'HelveticaNeue';
     font-size: 15px;
     color: #fff!important;
+    margin-bottom: 0 !important;
+    font-size: 20px !important;
     }
     
     .sub_menu a:hover {
@@ -541,7 +546,7 @@ object-fit: cover;
     text-transform: uppercase;
         font-family: 'HelveticaNeue';
 		  font-family: HelveticaNeue;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -620,13 +625,14 @@ object-fit: cover;
     text-decoration: none;
     -webkit-transition: 0.2s all linear;
     transition: 0.2s all linear;
+		font-weight: 600;
     }
     .nav-item2 a:hover{
     color: #000;
     text-decoration: none;
     -webkit-transition: 0.2s all linear;
     transition: 0.2s all linear;
-    text-decoration: underline;
+    text-decoration: none;
     }
     .no-gutters{
     padding-left: 0;
@@ -988,6 +994,10 @@ footer ul {
     color: #0f4388;
     }
     i.fa.fa-instagram {
+    font-size: 22px;
+    color: #0f4388;
+    }
+  i.fa.fa-youtube-play {
     font-size: 22px;
     color: #0f4388;
     }
@@ -3192,7 +3202,7 @@ font-size: 50px;
 }
 
 .about p {
-	  font-size: 12px;
+	  font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -3362,7 +3372,7 @@ display: flex;
 }
 
 .mision p {
-	  font-size: 12px;
+	  font-size: 13px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -4895,19 +4905,26 @@ height: auto!important;
         margin-right: 40px;
     }
     .other-images h3{    text-align: center;margin-bottom: 3%;}
-    
-    .nav-link p {
-        background: #0f4388;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff!important;
-        font-size: 14px;
-        margin-bottom:0;
-    }
+.btn-mini-cart{
+	    padding: 0;
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+   .mini-cart {
+	   position: absolute;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red !important;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 11px;
+}
     
     .modal {
         width: 27%;
@@ -5914,3 +5931,48 @@ padding-left: 0;
     .main-wishlist__content{
         margin-top: 8rem;
     }
+#form_donacin #frm_field_13_container {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 38px;
+}
+
+#form_donacin .frm_submit{
+	display: flex;
+	justify-content: center;
+}
+#form_donacin .frm_submit .frm_button_submit{
+	width: auto;
+    font-family: 'HelveticaNeue' !important;
+    font-size: 18px !important;
+    height: auto;
+    line-height: normal;
+    text-align: center;
+    background: #0f4389 !important;
+    border-color: #0e4388 !important;
+
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+    text-shadow: none;
+    padding: 12px 20px !important;
+
+}
+#form_donacin  label{
+	color: #000 !important;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: 'HelveticaNeue';
+}
+.frm_style_estilos-formidable.with_frm_style .frm-edit-page-btn:hover, .frm_style_estilos-formidable.with_frm_style input[type=submit]:hover, .frm_style_estilos-formidable.with_frm_style .frm_submit input[type=button]:hover, .frm_style_estilos-formidable.with_frm_style .frm_submit button:hover {
+    background: #efefef;
+    border-color: #cccccc;
+    color: #fff !important;
+}

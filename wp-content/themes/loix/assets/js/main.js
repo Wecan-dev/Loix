@@ -148,3 +148,27 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+$(document).ready(function(){
+    var width = window.innerWidth;
+    var resolucion = $( window ).width();
+
+    if(resolucion <= 575){
+		//$('input.dgwt-wcas-search-input').attr("placeholder", "Buscar");
+      $('.main_menu > li').click(function(){
+	
+		if (!$(this).children('.sub_menu').hasClass("active")) {
+			$('.sub_menu').removeClass('active');
+			$(this).children('.sub_menu').addClass('active');
+
+		}else{
+			$(this).children('.sub_menu').removeClass('active');
+				$('.sub_menu').removeClass('active');
+		}	
+	  });
+
+    }
+    
+ });
+
+

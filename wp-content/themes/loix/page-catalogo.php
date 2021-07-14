@@ -25,8 +25,10 @@
             <div class="impacto-mask">
               <h4><?php the_field('titulo_del_catalago'); ?></h4>
               <p><?php the_field('contenido_del_catalogo'); ?></p>
-              <a class="btn_custom"
-                   href="<?php the_field('url_del_boton_catalogo'); ?> "><?php the_field('texto_del_boton_catalogo'); ?></a>
+				<?php if ( get_field( 'cargar_pdf' ) ) : ?>
+					<a class="btn_custom" href="<?php the_field( 'cargar_pdf' ); ?>" download>Descargar</a>
+				<?php endif; ?>
+             
             </div>
     </div>
 	

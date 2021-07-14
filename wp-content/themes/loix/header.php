@@ -192,7 +192,7 @@
 
 </div>
 
-<div class="login-link ">
+<div class="login-link first-login__link ">
   <a class=" d-block d-sm-none ">Iniciar Sesión</a>
   <a class=" d-block d-sm-none ">Ayuda</a>
 
@@ -214,10 +214,13 @@
 <div class="login-link  ">
   <a class=" d-none d-sm-block " href="<?php bloginfo('url') ?>/mi-cuenta" >Iniciar Sesión</a>
   <a href="<?php bloginfo('url') ?>/faqs2" class=" d-none d-sm-block ">Ayuda</a>
-  <button type="button"  data-toggle="modal" data-target="#cartModal" href="<?php echo $url_carro; ?>" class="nav-link"  style="padding:0;"><span class="fa fa-shopping-bag"></span>
+  <button type="button"  data-toggle="modal" data-target="#cartModal" href="<?php echo $url_carro; ?>" class="nav-link btn-mini-cart"  style="padding:0;">
+	  
+	  <img src="http://159.89.229.55/Loix/wp-content/uploads/2021/07/bag.png">
+	 
 				  <p class="mini-cart"><?php echo WC()->cart->get_cart_contents_count(); ?></p></button>
   
-    <i class="d-block d-sm-none fa fa-user" aria-hidden="true"></i>
+    
    
 </div>
 

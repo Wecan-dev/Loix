@@ -678,7 +678,7 @@ if ( ! function_exists('opciones_donaciones') ) {
             'description'           => __( 'opciones_donaciones de trasnsporte', 'text_domain' ),
             'labels'                => $labels,
             'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
-            'taxonomies'            => array( 'category', 'post_tag' ),
+            'taxonomies'            => false,
             'hierarchical'          => false,
             'public'                => true,
             'show_ui'               => true,
@@ -1276,6 +1276,16 @@ $wp_customize->add_panel('footer',
       'section' => 'footer_redes_sociales',
       'settings' => 'instagram'
     )));  
+	  // texto de red
+    $wp_customize->add_setting('youtube', array(
+      'default' => ''
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_youtube', array (
+      'description' => 'URL YouTube',
+      'section' => 'footer_redes_sociales',
+      'settings' => 'youtube'
+    )));  
 
       $wp_customize->add_section('direccion', array (
     'title' => 'Dirección',
@@ -1325,48 +1335,48 @@ $wp_customize->add_panel('footer',
 
   /*********************************************************************/
 	    /************* /*************Banner donacion_interna*******************************/
-$wp_customize->add_panel('donacion_interna',
+$wp_customize->add_panel('donaciones',
         array(
-            'title' => 'Banners/donacion_interna',
+            'title' => 'Banners/donaciones',
             'priority' => 1,
             )
         );
-           /*************Banner donacion_interna*******/
-    $wp_customize->add_section('donacion_interna', array (
-    'title' => 'donacion_interna',
-    'panel' => 'donacion_interna'
+           /*************Banner opciones de donaciones*******/
+    $wp_customize->add_section('donacion_opciones', array (
+    'title' => 'Donacion opciones',
+    'panel' => 'donaciones'
   ));
-  // texto de red
-    $wp_customize->add_setting('donacion_interna_titulo', array(
+	 
+
+	$wp_customize->add_setting('donacion_opciones_titulo', array(
       'default' => ''
     ));
     
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_donacion_interna_titulo', array (
-      'description' => 'titulo de la donacion_interna',
-      'section' => 'donacion_interna',
-      'settings' => 'donacion_interna_titulo',
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_donacion_opciones_titulo', array (
+      'description' => 'Titulo',
+      'section' => 'donacion_opciones',
+      'settings' => 'donacion_opciones_titulo',
     )));  
     // texto de red
-    $wp_customize->add_setting('donacion_interna_subtitulo', array(
+    $wp_customize->add_setting('donacion_opciones_subtitulo', array(
       'default' => ''
     ));
     
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_donacion_interna_subtitulo', array (
-      'description' => 'Contenido del donacion_interna',
-      'section' => 'donacion_interna',
-      'settings' => 'donacion_interna_subtitulo',
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'texto_control_donacion_opciones_subtitulo', array (
+      'description' => 'Contenido ',
+      'section' => 'donacion_opciones',
+      'settings' => 'donacion_opciones_subtitulo',
       'type' => 'textarea'
     )));  
 //image
-  $wp_customize->add_setting('donacion_interna_imagen');
+  $wp_customize->add_setting('donacion_opciones_imagen');
   
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'donacion_interna_imagen', array (
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'donacion_opciones_imagen', array (
     'label' => 'Imagen',
     'description' => 'Imagen',
-    'section' => 'donacion_interna',
-    'settings' => 'donacion_interna_imagen'
+    'section' => 'donacion_opciones',
+    'settings' => 'donacion_opciones_imagen'
   )));
-   /***************************************************/
  }
 add_action('customize_register','theme_customize_register');
 

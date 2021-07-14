@@ -19,8 +19,12 @@
             <li class="ftco-animate"><a href="<?php echo get_theme_mod('facebook') ?>"></a><i class="fa fa-facebook" aria-hidden="true"></i></li>
               <?php }
          ?> 
-           <?php if (get_theme_mod('facebook') != NULL){?>  
+           <?php if (get_theme_mod('instagram') != NULL){?>  
             <li class="ftco-animate"><a href="<?php echo get_theme_mod('instagram') ?>"></a><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <?php }
+         ?> 
+			  <?php if (get_theme_mod('youtube') != NULL){?>  
+            <li class="ftco-animate"><a href="<?php echo get_theme_mod('youtube') ?>"></a><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
             <?php }
          ?> 
           </div>
@@ -33,10 +37,10 @@
           <div>
             <ul>
              
-              <li ><a href="  ">Contáctanos</a></li>
+              <li ><a href=" <?php echo bloginfo('url').'/index.php/contacto';?> ">Contáctanos</a></li>
               <li ><a href=" <?php echo bloginfo('url').'/index.php/terminos-y-condiciones';?> ">Términos y condiciones</a></li>
-              <li ><a href="">Productos</a></li>
-				<li ><a href="">Envíos</a></li>
+              <li ><a href=" <?php echo bloginfo('url').'/index.php/tienda';?> ">Productos</a></li>
+				<li ><a href="<?php echo bloginfo('url').'/index.php/envios';?>">Envíos</a></li>
             </ul>
           </div>
         </div>
@@ -47,7 +51,7 @@
         <div class="ftco-footer-widget">
           <div class=" ">
             <ul>
-              <li><a href="<?php echo bloginfo('url').'/index.php/privacy-policy';?>">Política de privacidad</a></li>
+              <li><a href="<?php echo bloginfo('url').'/index.php/politica-privacidad/';?>">Política de privacidad</a></li>
               <li><a href="">Cambios y devoluciones</a></li>
             </ul>
           </div>
@@ -60,7 +64,7 @@
           <div class="">
             <ul>   
                  <?php if (get_theme_mod('footer_direccion') != NULL){?>  
-              <li><a href="#"><img style="width: 10%; margin-right: 3px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loca.svg"><span class="text"><?php echo get_theme_mod('footer_direccion') ?></span></a></li>
+              <li><a href="#"><img style="width: 7.5%; margin-right: 3px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/loca.svg"><span class="text"><?php echo get_theme_mod('footer_direccion') ?></span></a></li>
               <?php }
          ?> 
             <?php if (get_theme_mod('footer_email') != NULL){?>  

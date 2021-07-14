@@ -39,7 +39,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             <p class="product-price" ><?php echo $product->get_price_html(); ?></p>
               <div class="colors">
           <?php foreach((get_the_terms(get_the_ID(), 'pa_color' )) as $category) {  termmeta_value('color',$category->term_id);?>
-        <div class="black" style="background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
+        <div class="black" style="width: 30px !important; height: 30px !important; background: <?php echo termmeta_value('color',$category->term_id); ?>"></div>
+				  <?php var_dump( $category);?>
           <?php }?>
   </div>
           </div>
